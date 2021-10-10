@@ -1,9 +1,10 @@
 ---
-title: "Exporation"
+title: "Abortion Data Exporation"
 author: "Avery Chan"
-date: "9/22/2021"
+date: "10/10/2021"
 output:
   html_document:
+    toc: true
     df_print: paged
     code_folding: show
 ---
@@ -14,11 +15,14 @@ library(tidyverse)
 library(ggplot2)
 library(ggprism)
 theme_set(theme_bw())
+knitr::opts_chunk$set(rows.print=20)
 ```
 
-This is a toy data set derived from the General Social Survey that I intend to use for several purposes. First, the battery of abortion items can serve as toy data to illustrate mixed effects modeling as equivalent to a one-parameter (Rasch) model. Second, I include some covariates to also do some basic regressions. I think abortion opinions are useful learning tools for statistical inference for college students. Third, there's a time-series component as well for understanding how abortion attitudes have changed over time.  
+## Description of Data by Source ([stevedata](http://svmiller.com/stevedata/reference/gss_abortion.html))
 
-Data include all General Social Survey observations from 1972 to 2018 for these variables. Be mindful of missing data.
+> This is a toy data set derived from the General Social Survey that I intend to use for several purposes. First, the battery of abortion items can serve as toy data to illustrate mixed effects modeling as equivalent to a one-parameter (Rasch) model. Second, I include some covariates to also do some basic regressions. I think abortion opinions are useful learning tools for statistical inference for college students. Third, there's a time-series component as well for understanding how abortion attitudes have changed over time.  
+>
+> Data include all General Social Survey observations from 1972 to 2018 for these variables. Be mindful of missing data.
 
 | Variable | Description |
 |---|---|
@@ -41,46 +45,88 @@ Data include all General Social Survey observations from 1972 to 2018 for these 
 | pid | `partyid` recoded so that 7 = NA |
 | hispanic | a dummy variable that equals 1 if the respondent is any way Hispanic |
 
+## Import Data
+
 ```{r}
 # Data from http://svmiller.com/stevedata/reference/gss_abortion.html
-# raw_abr <- read_csv("gss_abortion.csv", col_types = "???????????????????")
-raw_abr <- read_csv("gss_abortion.csv", col_types= cols(
-  row_num = col_integer(),
-  id = col_integer(),
-  year = col_integer(),
-  age = col_integer(),
-  race = col_character(),
-  sex = col_character(),
-  hispaniccat = col_character(),
-  educ = col_integer(),
-  partyid = col_character(),
-  relactiv = col_integer(),
-  abany = col_logical(),
-  abdefect = col_logical(),
-  abnomore = col_logical(),
-  abhlth = col_logical(),
-  abpoor = col_logical(),
-  abrape = col_logical(),
-  absingle = col_logical(),
-  pid = col_integer(),
-  hispanic = col_logical()
-))
+raw_abr <- read_csv(
+  "gss_abortion.csv",
+  col_types = cols(
+    row_num = col_integer(),
+    id = col_integer(),
+    year = col_integer(),
+    age = col_integer(),
+    race = col_character(),
+    sex = col_character(),
+    hispaniccat = col_character(),
+    educ = col_integer(),
+    partyid = col_character(),
+    relactiv = col_integer(),
+    abany = col_logical(),
+    abdefect = col_logical(),
+    abnomore = col_logical(),
+    abhlth = col_logical(),
+    abpoor = col_logical(),
+    abrape = col_logical(),
+    absingle = col_logical(),
+    pid = col_integer(),
+    hispanic = col_logical()
+  )
+) %>% rename(
+  row_number = row_num,
+  id = id,
+  year = year,
+  age = age,
+  race = race,
+  sex = sex,
+  hispanic_ethnicity = hispaniccat, # I drop this row as well because I do not know what the numbers mean
+  education = educ,
+  party_id = partyid,
+  religious_activity = relactiv,
+  ab_any = abany,
+  ab_defect = abdefect,
+  ab_no_more = abnomore,
+  ab_health = abhlth,
+  ab_poor = abpoor,
+  ab_rape = abrape,
+  ab_single = absingle,
+  party_id_na = pid, # recoded party_id, I remove this later
+  hispanic = hispanic
+)
+
+raw_abr$party_id_na <- NULL
+raw_abr$hispanic_ethnicity <- NULL
 ```
 
-Getting parsing error for the `relactiv` column which is "the self-reported religious activity of the respondent on a 1:11 scale." It expects it to be binary but it is actually on a 1:11 scale.
+<!-- Getting parsing error for the `relactiv` column which is "the self-reported religious activity of the respondent on a 1:11 scale." It expects it to be binary but it is actually on a 1:11 scale. -->
+
+### Quick View
 
 ```{r}
-raw_abr %>% dim()
-raw_abr %>% view()
+raw_abr
+# raw_abr %>% dim()
+# raw_abr %>% view()
 raw_abr %>% summary()
-raw_abr %>% str()
+# raw_abr %>% str()
 ```
 
+### Missing Values
 
 ```{r}
 n = raw_abr %>% nrow()
 na_counts <- raw_abr %>% is.na() %>% colSums() %>% as_tibble(rownames = "rowname") %>% mutate(p = value / n)
 na_counts %>% arrange(desc(p))
 ```
+
+## Filtering
+
+```{r}
+f_abr <- raw_abr %>% filter(!is.na(ab_any)) # drop rows where general stance on abortion wasn't given
+
+n = f_abr %>% nrow()
+na_counts <- f_abr %>% is.na() %>% colSums() %>% as_tibble(rownames = "rowname") %>% mutate(p = value / n)
+na_counts %>% arrange(desc(p))
+```
+
 
 
