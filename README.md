@@ -26,3 +26,9 @@ A lot of the missing values besides `a` and `b` were an absence of opinions on a
 
   <p>Missing values before and after removing rows with <code>NA</code> for <code>ab_any</code></p>
 </div>
+
+Wrote to csv.
+
+## Initial Visualizations
+
+Tablaue
