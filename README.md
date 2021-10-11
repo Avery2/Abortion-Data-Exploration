@@ -2,13 +2,13 @@
 
 I explored...
 
-## Choosing a dataset to explore
+## 1 Choosing a dataset to explore
 
 I intially had difficulty 
 
 I found https://vincentarelbundock.github.io/Rdatasets/articles/data.html which allowed me to sort by number or rows and columns. At this point I chose my data based on the percieved "richness" of the data. So I sorted by rows and looked through a few csvs until I found one that had a good amount of columns that seemed to encode distinct information (as opposed to very similar or the same information).
 
-## Data Parsing and Cleaning
+## 2 Data Parsing and Cleaning
 
 The first step of this was to clean the data. I had some parsing issues, and many missing values. Some of the missing values were due to parsing issues which I solved.
 
@@ -29,7 +29,7 @@ A lot of the missing values besides `a` and `b` were an absence of opinions on a
 
 Wrote to csv.
 
-## R
+## 3 R
 
 <div align="center">
   <img width="45%" alt="rsca.png" src="./img/r_sca.png">
@@ -39,7 +39,7 @@ Wrote to csv.
   <p>Words go here.</p>
 </div>
 
-## Missing Values
+## 4 Missing Values
 
 <div align="center">
   <img width="45%" alt="0c00005e.png" src="./img/0_c00005e.png">
@@ -49,7 +49,7 @@ Wrote to csv.
   <p>Words go here.</p>
 </div>
 
-## Missing Questions
+## 5 Missing Questions
 
 <div align="center">
   <img width="45%" alt="2scd.png" src="./img/2_scd.png">
@@ -59,7 +59,7 @@ Wrote to csv.
   <p>Words go here.</p>
 </div>
 
-## Missing Questions Pt. 2
+## 6 Missing Questions Pt. 2
 
 <div align="center">
   <img width="45%" alt="3sch.png" src="./img/3_sch.png">
@@ -70,7 +70,7 @@ Wrote to csv.
   <p>Words go here.</p>
 </div>
 
-## Correlations
+## 7 Correlations
 
 <div align="center">
   <img width="45%" alt="1Abortion Stances by Party.png" src="./img/1_Abortion Stances by Party.png">
