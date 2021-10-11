@@ -21,8 +21,8 @@ The first step of this was to clean the data. I had some parsing issues, and man
 A lot of the missing values besides `a` and `b` were an absence of opinions on aborition data, which we don't want bc that's the point so I removed rows that had miissing vlues for a gneneral opinoin on abortion and it helped. It was ok for missing vvalues for `a` and `b` because that just means "maybe" or "unknown" but it is auxiliary? data - not necessary for what we are measuring. would be nice if it was more tho.
 
 <div align="center">
-  <img width="45%" alt="d" src="./img/missing_na_a.png">
-  <img width="45%" alt="e" src="./img/missing_na_b.png">
+  <img width="45%" alt="d" src="./img/0_a00005c.png">
+  <img width="45%" alt="e" src="./img/0_b00000missing_na_b.png">
 
   <p>Missing values before and after removing rows with <code>NA</code> for <code>ab_any</code></p>
 </div>
@@ -32,3 +32,49 @@ Wrote to csv.
 ## Initial Visualizations
 
 Tablaue
+
+<div align="center">
+  <img width="45%" alt="rsca.png" src="./img/r_sca.png">
+<img width="45%" alt="rscb.png" src="./img/r_scb.png">
+<img width="45%" alt="rscc.png" src="./img/r_scc.png">
+
+  <p>Words go here.</p>
+</div>
+
+
+<div align="center">
+  <img width="45%" alt="2scd.png" src="./img/2_scd.png">
+<img width="45%" alt="2sce.png" src="./img/2_sce.png">
+<img width="45%" alt="2missing_rels.png" src="./img/2_missing_rels.png">
+
+  <p>Words go here.</p>
+</div>
+
+
+<div align="center">
+  <img width="45%" alt="1Abortion Stances by Party.png" src="./img/1_Abortion Stances by Party.png">
+<img width="45%" alt="1Abortion Stances by Religious Activity.png" src="./img/1_Abortion Stances by Religious Activity.png">
+<img width="45%" alt="1Abortion Stances by Education.png" src="./img/1_Abortion Stances by Education.png">
+<img width="45%" alt="1Abortion Stances by Age.png" src="./img/1_Abortion Stances by Age.png">
+
+  <p>Words go here.</p>
+</div>
+
+
+<div align="center">
+  <img width="45%" alt="0c00005e.png" src="./img/0_c00005e.png">
+<img width="45%" alt="0b00000missing_na_b.png" src="./img/0_b00000missing_na_b.png">
+<img width="45%" alt="0a00005c.png" src="./img/0_a00005c.png">
+
+  <p>Words go here.</p>
+</div>
+
+
+<div align="center">
+  <img width="45%" alt="3sch.png" src="./img/3_sch.png">
+<img width="45%" alt="3sci.png" src="./img/3_sci.png">
+<img width="45%" alt="3scg.png" src="./img/3_scg.png">
+<img width="45%" alt="3scf.png" src="./img/3_scf.png">
+
+  <p>Words go here.</p>
+</div>
