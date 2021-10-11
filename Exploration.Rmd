@@ -50,8 +50,27 @@ knitr::opts_chunk$set(rows.print=20)
 ```{r}
 # Data from http://svmiller.com/stevedata/reference/gss_abortion.html
 raw_abr <- read_csv(
-  "gss_abortion.csv",
+  "data/gss_abortion.csv",
   col_types = cols(
+    # row_num = col_integer(),
+    # id = col_integer(),
+    # year = col_integer(),
+    # age = col_integer(),
+    # race = col_character(),
+    # sex = col_character(),
+    # hispaniccat = col_character(),
+    # educ = col_integer(),
+    # partyid = col_character(),
+    # relactiv = col_integer(),
+    # abany = col_logical(),
+    # abdefect = col_logical(),
+    # abnomore = col_logical(),
+    # abhlth = col_logical(),
+    # abpoor = col_logical(),
+    # abrape = col_logical(),
+    # absingle = col_logical(),
+    # pid = col_integer(),
+    # hispanic = col_logical()
     row_num = col_integer(),
     id = col_integer(),
     year = col_integer(),
@@ -62,15 +81,15 @@ raw_abr <- read_csv(
     educ = col_integer(),
     partyid = col_character(),
     relactiv = col_integer(),
-    abany = col_logical(),
-    abdefect = col_logical(),
-    abnomore = col_logical(),
-    abhlth = col_logical(),
-    abpoor = col_logical(),
-    abrape = col_logical(),
-    absingle = col_logical(),
+    abany = col_integer(),
+    abdefect = col_integer(),
+    abnomore = col_integer(),
+    abhlth = col_integer(),
+    abpoor = col_integer(),
+    abrape = col_integer(),
+    absingle = col_integer(),
     pid = col_integer(),
-    hispanic = col_logical()
+    hispanic = col_integer()
   )
 ) %>% rename(
   row_number = row_num,
@@ -122,8 +141,35 @@ na_counts %>% arrange(desc(p))
 
 ```{r}
 f_abr <-
-  raw_abr %>% filter(!is.na(ab_any)) # drop rows where general stance on abortion wasn't given
+  raw_abr %>%
+  drop_na(
+    party_id,
+    education,
+    age,
+    ab_any,
+    ab_rape,
+    ab_defect,
+    ab_no_more,
+    ab_health,
+    ab_poor,
+    ab_single
+  )
+```
 
+Replace NA values
+```{r}
+f_abr$hispanic[is.na(f_abr$hispanic)] <- 2
+# f_abr$ab_any[is.na(f_abr$ab_any)] <- 2
+# f_abr$ab_rape[is.na(f_abr$ab_rape)] <- 2
+# f_abr$ab_defect[is.na(f_abr$ab_defect)] <- 2
+# f_abr$ab_no_more[is.na(f_abr$ab_no_more)] <- 2
+# f_abr$ab_health[is.na(f_abr$ab_health)] <- 2
+# f_abr$ab_poor[is.na(f_abr$ab_poor)] <- 2
+# f_abr$ab_single[is.na(f_abr$ab_single)] <- 2
+# f_abr$religious_activity[is.na(f_abr$religious_activity)] <- 2
+```
+
+```{r}
 n = raw_abr %>% nrow()
 na_counts_raw <-
   raw_abr %>% is.na() %>% colSums() %>% as_tibble(rownames = "rowname") %>% mutate(p = value / n) %>% arrange(desc(p))
@@ -161,8 +207,95 @@ na_counts %>% ggplot(aes(x = reorder(rowname, -value), y = value)) +
 ## Replace NA values for plotting
 
 ```{r}
-f_abr
-write_csv(f_abr, "mutated_gss_abortion.csv")
+# # f_abr$year %>% unique()
+# missing_religion <- raw_abr %>% 
+#   group_by(year) %>% 
+#   summarise(
+#     num_na = sum(is.na(ab_rape)),
+#     n = n(),
+#     # had_question = !(num_na == n),
+#     p = num_na / n,
+#     had_question = p < 0.9,
+#   )
+# 
+# missing_religion %>% ggplot(aes(x = year, y = n, fill=had_question)) +
+#   geom_bar(stat = "identity") +
+#   # geom_text(aes(label = p), vjust = -0.3, size = 3.5) +
+#   theme(axis.text.x = element_text(
+#     angle = 90,
+#     vjust = 0.5,
+#     hjust = 1
+#   )) +
+#   labs(title = paste("Missing Values for X Per Year"),
+#        x = "Year",
+#        y = "Number of missing values")
+
+missing_religion <- raw_abr %>%
+  group_by(year) %>%
+  summarise(
+    num_na = sum(is.na(ab_rape)),
+    n = n(),
+    # had_question = !(num_na == n),
+    p = num_na / n,
+    had_question = p < 0.9,
+  )
+```
+
+```{r}
+graph_missing <- function(col) {
+  missing_x <- raw_abr %>%
+    group_by(year) %>%
+    summarise(
+      num_na = sum(is.na(!!rlang::sym(col))),
+      n = n(),
+      # had_question = !(num_na == n),
+      p = num_na / n,
+      had_question = p < 0.9,
+    )
+  
+  missing_x %>% ggplot(aes(x = year, y = n, fill = p)) +
+    geom_bar(stat = "identity") +
+    geom_text(aes(label = round(p, 2)), vjust = -0.3, size = 1.5) +
+    theme(axis.text.x = element_text(
+      angle = 90,
+      vjust = 0.5,
+      hjust = 1
+    )) +
+    labs(title = paste(paste("Missing Values for ", col, " Per Year")),
+         x = "Year",
+         y = "Number of missing values")
+}
+graph_missing("religious_activity")
+graph_missing("ab_any")
+graph_missing("ab_rape")
+graph_missing("ab_defect")
+graph_missing("ab_no_more")
+graph_missing("ab_health")
+graph_missing("ab_poor")
+graph_missing("ab_single")
+```
+```{r}
+f_abr$party_id %>% unique()
+
+f_abr <- f_abr %>% mutate(
+  party_val = case_when(
+    party_id == "Strong Democrat" ~ -3,
+    party_id == "Not Str Democrat" ~ -2,
+    party_id == "Ind,Near Dem" ~ -1,
+    party_id == "Independent" ~ 0,
+    party_id == "Ind,Near Rep" ~ 1,
+    party_id == "Not Str Republican" ~ 2,
+    party_id == "Strong Republican" ~ 3,
+    party_id == "Other Party" ~ 0,
+  )
+)
+```
+
+
+```{r}
+f_abr$religious_activity %>% unique()
+f_abr$hispanic %>% unique()
+write_csv(f_abr, "data/mutated_gss_abortion.csv")
 ```
 
 
