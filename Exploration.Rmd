@@ -121,11 +121,41 @@ na_counts %>% arrange(desc(p))
 ## Filtering
 
 ```{r}
-f_abr <- raw_abr %>% filter(!is.na(ab_any)) # drop rows where general stance on abortion wasn't given
+f_abr <-
+  raw_abr %>% filter(!is.na(ab_any)) # drop rows where general stance on abortion wasn't given
+
+n = raw_abr %>% nrow()
+na_counts_raw <-
+  raw_abr %>% is.na() %>% colSums() %>% as_tibble(rownames = "rowname") %>% mutate(p = value / n) %>% arrange(desc(p))
+
+na_counts_raw %>% ggplot(aes(x = reorder(rowname, -value), y = value)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_text(aes(label = value), vjust = -0.3, size = 3.5) +
+  theme(axis.text.x = element_text(
+    angle = 90,
+    vjust = 0.5,
+    hjust = 1
+  )) +
+  labs(title = paste("Missing Values (n=", n, ")"),
+       x = "Variable",
+       y = "Number of missing values")
 
 n = f_abr %>% nrow()
-na_counts <- f_abr %>% is.na() %>% colSums() %>% as_tibble(rownames = "rowname") %>% mutate(p = value / n)
-na_counts %>% arrange(desc(p))
+na_counts <-
+  f_abr %>% is.na() %>% colSums() %>% as_tibble(rownames = "rowname") %>% mutate(p = value / n)
+na_counts <- na_counts %>% arrange(desc(p))
+
+na_counts %>% ggplot(aes(x = reorder(rowname, -value), y = value)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_text(aes(label = value), vjust = -0.3, size = 3.5) +
+  theme(axis.text.x = element_text(
+    angle = 90,
+    vjust = 0.5,
+    hjust = 1
+  )) +
+  labs(title = paste("Missing Values (n=", n, ")"),
+       x = "Variable",
+       y = "Number of missing values")
 ```
 
 
