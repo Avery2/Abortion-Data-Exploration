@@ -158,5 +158,30 @@ na_counts %>% ggplot(aes(x = reorder(rowname, -value), y = value)) +
        y = "Number of missing values")
 ```
 
+## Replace NA values for plotting
+
+```{r}
+f_abr
+write_csv(f_abr, "mutated_gss_abortion.csv")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
