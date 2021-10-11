@@ -29,9 +29,7 @@ A lot of the missing values besides `a` and `b` were an absence of opinions on a
 
 Wrote to csv.
 
-## Initial Visualizations
-
-Tablaue
+## R
 
 <div align="center">
   <img width="45%" alt="rsca.png" src="./img/r_sca.png">
@@ -41,25 +39,7 @@ Tablaue
   <p>Words go here.</p>
 </div>
 
-
-<div align="center">
-  <img width="45%" alt="2scd.png" src="./img/2_scd.png">
-<img width="45%" alt="2sce.png" src="./img/2_sce.png">
-<img width="45%" alt="2missing_rels.png" src="./img/2_missing_rels.png">
-
-  <p>Words go here.</p>
-</div>
-
-
-<div align="center">
-  <img width="45%" alt="1Abortion Stances by Party.png" src="./img/1_Abortion Stances by Party.png">
-<img width="45%" alt="1Abortion Stances by Religious Activity.png" src="./img/1_Abortion Stances by Religious Activity.png">
-<img width="45%" alt="1Abortion Stances by Education.png" src="./img/1_Abortion Stances by Education.png">
-<img width="45%" alt="1Abortion Stances by Age.png" src="./img/1_Abortion Stances by Age.png">
-
-  <p>Words go here.</p>
-</div>
-
+## Missing Values
 
 <div align="center">
   <img width="45%" alt="0c00005e.png" src="./img/0_c00005e.png">
@@ -69,12 +49,34 @@ Tablaue
   <p>Words go here.</p>
 </div>
 
+## Missing Questions
+
+<div align="center">
+  <img width="45%" alt="2scd.png" src="./img/2_scd.png">
+<img width="45%" alt="2sce.png" src="./img/2_sce.png">
+<img width="45%" alt="2missing_rels.png" src="./img/2_missing_rels.png">
+
+  <p>Words go here.</p>
+</div>
+
+## Missing Questions Pt. 2
 
 <div align="center">
   <img width="45%" alt="3sch.png" src="./img/3_sch.png">
 <img width="45%" alt="3sci.png" src="./img/3_sci.png">
 <img width="45%" alt="3scg.png" src="./img/3_scg.png">
 <img width="45%" alt="3scf.png" src="./img/3_scf.png">
+
+  <p>Words go here.</p>
+</div>
+
+## Correlations
+
+<div align="center">
+  <img width="45%" alt="1Abortion Stances by Party.png" src="./img/1_Abortion Stances by Party.png">
+<img width="45%" alt="1Abortion Stances by Religious Activity.png" src="./img/1_Abortion Stances by Religious Activity.png">
+<img width="45%" alt="1Abortion Stances by Education.png" src="./img/1_Abortion Stances by Education.png">
+<img width="45%" alt="1Abortion Stances by Age.png" src="./img/1_Abortion Stances by Age.png">
 
   <p>Words go here.</p>
 </div>
