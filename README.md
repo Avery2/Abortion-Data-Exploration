@@ -1,5 +1,14 @@
 # Writeup
 
+<!-- <div align="center">
+  <img width="45%" alt="" src="">
+  <img width="45%" alt="" src="">
+  <img width="45%" alt="" src="">
+  <img width="45%" alt="" src="">
+
+  <p>Words go here.</p>
+</div> -->
+
 ## 1 Choosing a dataset to explore
 
 I found https://vincentarelbundock.github.io/Rdatasets/articles/data.html which allowed me to sort by number or rows and columns. At this point I chose my data based on the percieved "richness" of the data. So I sorted by rows and looked through a few csvs until I found one that had a good amount of columns that seemed to encode distinct information (as opposed to very similar or the same information).
@@ -17,9 +26,9 @@ The first step of this was to clean the data. I had some parsing issues, and man
 ## 3 R
 
 <div align="center">
-  <img height="300" alt="rsca.png" src="./img/r_sca.png">
-  <img height="300" alt="rscb.png" src="./img/r_scb.png">
-  <img height="300" alt="rscc.png" src="./img/r_scc.png">
+  <img height="300" alt="rsca.png" src="https://user-images.githubusercontent.com/53503018/136874793-18c1902e-0790-4d27-8029-275178a516c6.png">
+  <img height="300" alt="rscb.png" src="https://user-images.githubusercontent.com/53503018/136874796-81a391ea-88e7-4677-8c5a-64ce9ba4a664.png">
+  <img height="300" alt="rscc.png" src="https://user-images.githubusercontent.com/53503018/136874798-cf854caf-0e2f-4b3b-82f2-89ab026ebf0b.png">
 
   <p>Words go here.</p>
 </div>
@@ -27,9 +36,9 @@ The first step of this was to clean the data. I had some parsing issues, and man
 ## 4 Missing Values
 
 <div align="center">
-  <img width="45%" alt="0a00005c.png" src="./img/0_a00005c.png">
-  <img width="45%" alt="0b00000missing_na_b.png" src="./img/0_b00000missing_na_b.png">
-  <img width="45%" alt="0c00005e.png" src="./img/0_c00005e.png">
+  <img width="45%" alt="0a00005c.png" src="https://user-images.githubusercontent.com/53503018/136874866-9b5d89d0-5232-49ec-9cc7-f6f16eaa1c74.png">
+  <img width="45%" alt="0b00000missing_na_b.png" src="https://user-images.githubusercontent.com/53503018/136874867-819e426b-bc9a-4b7c-8842-66f9d2b324b4.png">
+  <img width="45%" alt="0c00005e.png" src="https://user-images.githubusercontent.com/53503018/136874870-16b44c0a-0cf8-48a9-8419-5ae742a3ea8f.png">
 
   <p>Words go here.</p>
 </div>
@@ -37,9 +46,9 @@ The first step of this was to clean the data. I had some parsing issues, and man
 ## 5 Missing Questions
 
 <div align="center">
-  <img width="45%" alt="2scd.png" src="./img/2_scd.png">
-<img width="45%" alt="2sce.png" src="./img/2_sce.png">
-<img width="45%" alt="2missing_rels.png" src="./img/2_missing_rels.png">
+  <img width="45%" alt="2scd.png" src="https://user-images.githubusercontent.com/53503018/136874948-3ac63d50-4c18-4579-99be-fd7f5190efae.png">
+  <img width="45%" alt="2sce.png" src="https://user-images.githubusercontent.com/53503018/136874956-4564c8f0-c9df-41a4-a0b7-478e9c4fce2e.png">
+  <img width="45%" alt="2missing_rels.png" src="https://user-images.githubusercontent.com/53503018/136874947-b975888d-e8db-4ed5-b5d1-e597ee08c5be.png">
 
   <p>Words go here.</p>
 </div>
@@ -47,10 +56,10 @@ The first step of this was to clean the data. I had some parsing issues, and man
 ## 6 Missing Questions Pt. 2
 
 <div align="center">
-  <img width="45%" alt="3sch.png" src="./img/3_sch.png">
-<img width="45%" alt="3sci.png" src="./img/3_sci.png">
-<img width="45%" alt="3scg.png" src="./img/3_scg.png">
-<img width="45%" alt="3scf.png" src="./img/3_scf.png">
+  <img width="45%" alt="3sch.png" src="https://user-images.githubusercontent.com/53503018/136875029-65aaf7bb-8dff-4ba1-aefc-29cf462a7e31.png">
+  <img width="45%" alt="3sci.png" src="https://user-images.githubusercontent.com/53503018/136875031-9cb46e4a-b6f5-4c66-a352-e15760a68417.png">
+  <img width="45%" alt="3scg.png" src="https://user-images.githubusercontent.com/53503018/136875028-98f4e0b5-48d5-4d84-a1e2-936fb53e3421.png">
+  <img width="45%" alt="3scf.png" src="https://user-images.githubusercontent.com/53503018/136875026-18af4569-b990-4517-8308-896880e85ed3.png">
 
   <p>Words go here.</p>
 </div>
@@ -58,10 +67,31 @@ The first step of this was to clean the data. I had some parsing issues, and man
 ## 7 Correlations
 
 <div align="center">
-  <img width="45%" alt="1Abortion Stances by Party.png" src="./img/1_Abortion Stances by Party.png">
-<img width="45%" alt="1Abortion Stances by Religious Activity.png" src="./img/1_Abortion Stances by Religious Activity.png">
-<img width="45%" alt="1Abortion Stances by Education.png" src="./img/1_Abortion Stances by Education.png">
-<img width="45%" alt="1Abortion Stances by Age.png" src="./img/1_Abortion Stances by Age.png">
+  <img width="45%" alt="1Abortion Stances by Party.png" src="https://user-images.githubusercontent.com/53503018/136875123-f6b1b241-cb3f-4b3c-9828-d4038137fac3.png">
+  <img width="45%" alt="1Abortion Stances by Religious Activity.png" src="https://user-images.githubusercontent.com/53503018/136875124-247a4bf0-752d-448c-bacd-f1a10c0b99ae.png">
+  <img width="45%" alt="1Abortion Stances by Education.png" src="https://user-images.githubusercontent.com/53503018/136875120-d9332ba1-408f-40c9-bc43-37d9c1840f36.png">
+  <img width="45%" alt="1Abortion Stances by Age.png" src="https://user-images.githubusercontent.com/53503018/136875117-1bbdb8b5-8beb-4a3a-b494-473410d81c59.png">
+
+  <p>Words go here.</p>
+</div>
+
+## 8 Time
+
+<div align="center">
+  <img width="45%" alt="Abortion Stances by Year" src="https://user-images.githubusercontent.com/53503018/136875293-45133031-3bf2-413f-9bd2-db91f33d4454.png">
+  <img width="45%" alt="Abortion Stances by Sex over Time" src="https://user-images.githubusercontent.com/53503018/136875290-c6ec8ef8-422f-4f96-bb98-dcf7868c79ba.png">
+  <img width="45%" alt="Abortion Stances by Party over Time" src="https://user-images.githubusercontent.com/53503018/136875289-8fa623f7-eeda-4c00-9806-cc2440835648.png">
+
+  <p>Words go here.</p>
+</div>
+
+## 9 Bars
+
+<div align="center">
+  <img width="45%" alt="Abortion Stances by Hispanic" src="https://user-images.githubusercontent.com/53503018/136875278-62288e2a-bb64-4050-b18f-8e8cda697c60.png">
+  <img width="45%" alt="Abortion Stances by Party Bar" src="https://user-images.githubusercontent.com/53503018/136875282-647b6164-3f6b-4105-81cc-70a24c2c79e3.png">
+  <img width="45%" alt="Abortion Stances by Party Bar 2" src="https://user-images.githubusercontent.com/53503018/136875280-eb7cfd80-e46b-450e-80b9-32ff357d3efa.png">
+  <img width="45%" alt="Abortion Stances by Sex" src="https://user-images.githubusercontent.com/53503018/136875284-652698de-b7c2-4da2-8fe4-34b5c8c81e62.png">
 
   <p>Words go here.</p>
 </div>
