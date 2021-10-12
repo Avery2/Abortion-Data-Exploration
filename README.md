@@ -130,16 +130,14 @@ The chart by party over time was most interesting because you can see the stance
 | age | the respondent's age in years |
 | race | the respondent's race, as character variable |
 | sex | the respondent's gender, as character variable |
-| hispaniccat | the respondent's Hispanic ethnicity, as character variable |
-| educ | how many years the respondent spent in school |
-| partyid | the respondent's party identification, as character variable |
-| relactiv | the self-reported religious activity of the respondent on a 1:11 scale |
-| abany | a binary variable that equals 1 if the respondent thinks abortion should be legal for any reason. 0 indicates no support for abortion for any reason. |
-| abdefect | a numeric vector that equals 1 if the respondent thinks abortion should be legal if there is a serious defect in the fetus. 0 indicates no support for abortion in this circumstance. |
-| abnomore | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a woman is pregnant but wants no more children. 0 indicates no support for abortion in this circumstance. |
-| abhlth | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman's health is in danger. 0 indicates no support for abortion in this circumstance. |
-| abpoor | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman is poor and cannot afford more children. 0 indicates no support for abortion in this circumstance. |
-| abrape | a numeric vector that equals 1 if the respondent thinks abortion should be legal if the woman became pregnant because of a rape. 0 indicates no support for abortion in this circumstance. |
-| absingle | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman is single and does not want to marry the man who impregnated her. 0 indicates no support for abortion in this circumstance. |
-| pid | `partyid` recoded so that 7 = NA |
+| education | how many years the respondent spent in school |
+| party | the respondent's party identification, as character variable |
+| religious_activity| the self-reported religious activity of the respondent on a 1:11 scale |
+| ab_any | a binary variable that equals 1 if the respondent thinks abortion should be legal for any reason. 0 indicates no support for abortion for any reason. |
+| ab_defect | a numeric vector that equals 1 if the respondent thinks abortion should be legal if there is a serious defect in the fetus. 0 indicates no support for abortion in this circumstance. |
+| ab_nomore | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a woman is pregnant but wants no more children. 0 indicates no support for abortion in this circumstance. |
+| ab_hlth | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman's health is in danger. 0 indicates no support for abortion in this circumstance. |
+| ab_poor | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman is poor and cannot afford more children. 0 indicates no support for abortion in this circumstance. |
+| ab_rape | a numeric vector that equals 1 if the respondent thinks abortion should be legal if the woman became pregnant because of a rape. 0 indicates no support for abortion in this circumstance. |
+| ab_single | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman is single and does not want to marry the man who impregnated her. 0 indicates no support for abortion in this circumstance. |
 | hispanic | a dummy variable that equals 1 if the respondent is any way Hispanic |
