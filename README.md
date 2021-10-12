@@ -9,11 +9,11 @@
   <p>Words go here.</p>
 </div> -->
 
-## 1 Choosing a dataset to explore
+## 0 Choosing a dataset to explore
 
 I found https://vincentarelbundock.github.io/Rdatasets/articles/data.html which allowed me to sort by number or rows and columns. At this point I chose my data based on the percieved "richness" of the data. So I sorted by rows and looked through a few csvs until I found one that had a good amount of columns that seemed to encode distinct information (as opposed to very similar or the same information).
 
-## 2 Data Parsing
+## 1 Data Parsing
 
 The first step of this was to clean the data. I had some parsing issues, and many missing values. Some of the missing values were due to parsing issues which I solved.
 
@@ -23,7 +23,7 @@ The first step of this was to clean the data. I had some parsing issues, and man
   <p>Parsing issues and missing values.</p>
 </div>
 
-## 3 R
+## 2 R
 
 <div align="center">
   <img height="300" alt="rsca.png" src="https://user-images.githubusercontent.com/53503018/136874793-18c1902e-0790-4d27-8029-275178a516c6.png">
@@ -33,7 +33,7 @@ The first step of this was to clean the data. I had some parsing issues, and man
   <p>Words go here.</p>
 </div>
 
-## 4 Missing Values
+## 3 Missing Values
 
 <div align="center">
   <img width="45%" alt="0a00005c.png" src="https://user-images.githubusercontent.com/53503018/136874866-9b5d89d0-5232-49ec-9cc7-f6f16eaa1c74.png">
@@ -43,7 +43,7 @@ The first step of this was to clean the data. I had some parsing issues, and man
   <p>Words go here.</p>
 </div>
 
-## 5 Missing Questions
+## 4 Missing Questions
 
 <div align="center">
   <img width="45%" alt="2scd.png" src="https://user-images.githubusercontent.com/53503018/136874948-3ac63d50-4c18-4579-99be-fd7f5190efae.png">
@@ -53,7 +53,7 @@ The first step of this was to clean the data. I had some parsing issues, and man
   <p>Words go here.</p>
 </div>
 
-## 6 Missing Questions Pt. 2
+## 5 Missing Questions Pt. 2
 
 <div align="center">
   <img width="45%" alt="3sch.png" src="https://user-images.githubusercontent.com/53503018/136875029-65aaf7bb-8dff-4ba1-aefc-29cf462a7e31.png">
@@ -64,7 +64,7 @@ The first step of this was to clean the data. I had some parsing issues, and man
   <p>Words go here.</p>
 </div>
 
-## 9 Bars
+## 6 Bars
 
 <div align="center">
   <img width="45%" alt="Abortion Stances by Hispanic" src="https://user-images.githubusercontent.com/53503018/136875278-62288e2a-bb64-4050-b18f-8e8cda697c60.png">
