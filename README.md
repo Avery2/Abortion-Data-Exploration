@@ -82,7 +82,7 @@ I started by visualizing the number of missing value for each column. When I ign
   <img width="45%" alt="1Abortion Stances by Education.png" src="https://user-images.githubusercontent.com/53503018/136875120-d9332ba1-408f-40c9-bc43-37d9c1840f36.png">
   <img width="45%" alt="1Abortion Stances by Age.png" src="https://user-images.githubusercontent.com/53503018/136875117-1bbdb8b5-8beb-4a3a-b494-473410d81c59.png">
 
-  <p>Line plots to show correlations between abortion stances and `Party`, `Religious Activity`, `Education`, and `Age`.</p>
+  <p>Line plots to show correlations between abortion stances and <code>Party</code>, <code>Religious Activity</code>, <code>Education</code>, and <code>Age</code>.</p>
 </div>
 
 ## 7 Time
@@ -92,5 +92,5 @@ I started by visualizing the number of missing value for each column. When I ign
   <img width="45%" alt="Abortion Stances by Sex over Time" src="https://user-images.githubusercontent.com/53503018/136875290-c6ec8ef8-422f-4f96-bb98-dcf7868c79ba.png">
   <img width="45%" alt="Abortion Stances by Party over Time" src="https://user-images.githubusercontent.com/53503018/136875289-8fa623f7-eeda-4c00-9806-cc2440835648.png">
 
-  <p>Abortion stances by year overall and for both `Sex` and `Party`.</p>
+  <p>Abortion stances by year overall and for both <code>Sex</code> and <code>Party</code>.</p>
 </div>
