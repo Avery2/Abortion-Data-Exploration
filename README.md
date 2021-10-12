@@ -14,17 +14,6 @@ The first step of this was to clean the data. I had some parsing issues, and man
   <p>Parsing issues and missing values.</p>
 </div>
 
-## 2.5 Data Cleaning
-
-A lot of the missing values besides `a` and `b` were an absence of opinions on aborition data, which we don't want bc that's the point so I removed rows that had miissing vlues for a gneneral opinoin on abortion and it helped. It was ok for missing vvalues for `a` and `b` because that just means "maybe" or "unknown" but it is auxiliary? data - not necessary for what we are measuring. would be nice if it was more tho.
-
-<div align="center">
-  <img width="45%" alt="d" src="./img/0_a00005c.png">
-  <img width="45%" alt="e" src="./img/0_b00000missing_na_b.png">
-
-  <p>Missing values before and after removing rows with <code>NA</code> for <code>ab_any</code></p>
-</div>
-
 ## 3 R
 
 <div align="center">
