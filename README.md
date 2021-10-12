@@ -103,13 +103,7 @@ For variables that I thought could be treated as ordinal, like `Religious Activi
 
 ## What effect has time had on abortion stances?
 
-I plotted against time based on the negative correlation between `Age` and acceptance of abortion as well as because I was interested in seeing if the missing questions during some years might be noticible.
-
-- Sex similar
-- By year not much change overall
-- See differences in reasons similar to original bar graph
-
-The chart by party over time was most interesting because you can see the stances on abortion diverge among party lines.
+I plotted against time next because of the correaltion with `Age` shown above and I just suspected there would be a pattern. I was surprised that overall there wasn't much change in the proportion of answers to questions on abortion. I did however notice the distinction between reasons for abortion even more clearly than in the bar charts. The chart by party over time was most interesting because you can see the stances on abortion diverge among party lines with the most Democratic `party` encoded as `-3` and the most Republican encoded as `3`.
 
 <div align="center">
   <img width="45%" alt="Abortion Stances by Year" src="https://user-images.githubusercontent.com/53503018/136875293-45133031-3bf2-413f-9bd2-db91f33d4454.png">
