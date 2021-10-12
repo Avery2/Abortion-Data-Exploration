@@ -73,6 +73,8 @@ With this long step of cleaning data over, I could start plotting in Tableau.
 
 ## 5 Bars
 
+I started by creating bar charts of some nominal variables (`Hispanic`, `Party`, `Sex`) against Abortion stances. I had expected to see more difference in these stances between groups, especially between the sexes, but it didn't seem there was a significant difference (as shown by the average line with 95% confidence interval). This also showed a difference in what people thought were acceptable reasons for abortion.
+
 <div align="center">
   <img width="45%" alt="Abortion Stances by Hispanic" src="https://user-images.githubusercontent.com/53503018/136875278-62288e2a-bb64-4050-b18f-8e8cda697c60.png">
   <img width="45%" alt="Abortion Stances by Party Bar" src="https://user-images.githubusercontent.com/53503018/136875282-647b6164-3f6b-4105-81cc-70a24c2c79e3.png">
@@ -84,6 +86,8 @@ With this long step of cleaning data over, I could start plotting in Tableau.
 
 ## 6 Correlations
 
+For variables that I thought could be treated as ordinal, like `Party` adjusted to a numerical scale (Democratic to Independent to Republican), `Religious Activity`, `Age`, or `Education`. By plotting on a simple line chart I was able to see some simple linear correlations for `Education`, `Age`, and `Party`. `Religious Activity` had some interesting behaviour once it got to `11` on it's scale from `1` to `11` but I was unable to find the original scale from the questionnaires to find out what this meant (I suspect 11 encodes no religious activity) because the system became computerized which made it much harder to search for a specific question.
+
 <div align="center">
   <img width="45%" alt="1Abortion Stances by Party.png" src="https://user-images.githubusercontent.com/53503018/136875123-f6b1b241-cb3f-4b3c-9828-d4038137fac3.png">
   <img width="45%" alt="1Abortion Stances by Religious Activity.png" src="https://user-images.githubusercontent.com/53503018/136875124-247a4bf0-752d-448c-bacd-f1a10c0b99ae.png">
@@ -94,6 +98,14 @@ With this long step of cleaning data over, I could start plotting in Tableau.
 </div>
 
 ## 7 Time
+
+I plotted against time based on the negative correlation between `Age` and acceptance of abortion as well as because I was interested in seeing if the missing questions during some years might be noticible.
+
+- Sex similar
+- By year not much change overall
+- See differences in reasons similar to original bar graph
+
+The chart by party over time was most interesting because you can see the stances on abortion diverge among party lines.
 
 <div align="center">
   <img width="45%" alt="Abortion Stances by Year" src="https://user-images.githubusercontent.com/53503018/136875293-45133031-3bf2-413f-9bd2-db91f33d4454.png">
