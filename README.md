@@ -39,7 +39,7 @@ I started by visualizing the number of missing value for each column. When I ign
 
 ## Why are there so many missing values?
 
-Suspecting the missing data was because of changes in the survey questions I plotted the number of missing values by year and colored the bars if all of the values for that year were `NA`. I did this for each column. Based on these graphs, I saw that some questions weren't asked until the 2000s. I was able to confirm this assumption with the [archive of all GSS questionnaires](https://gss.norc.org/get-documentation/questionnaires). This meant that I needed to find a way to clean the data without dropping rows with `NA` values or the data would be skewed towards the present.
+Suspecting the missing data was because of changes in the survey questions I plotted the number of missing values by year and colored the bars if all of the values for that year were `NA`. Based on these graphs, I saw that some questions weren't asked until the 2000s. I was able to confirm this assumption with the [archive of all GSS questionnaires](https://gss.norc.org/get-documentation/questionnaires). This meant that I needed to find a way to clean the data without dropping rows with `NA` values or the data would be skewed towards the present.
 
 <div align="center">
   <img width="45%" alt="2scd.png" src="https://user-images.githubusercontent.com/53503018/136874948-3ac63d50-4c18-4579-99be-fd7f5190efae.png">
