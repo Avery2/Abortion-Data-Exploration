@@ -11,11 +11,11 @@
 
 ## 0 Choosing a dataset to explore
 
-The data I explored was a subset of [The General Society Survey](https://gss.norc.org/About-The-GSS) focused on stances around abortion. I found the dataset from [Rdatasets](https://vincentarelbundock.github.io/Rdatasets/articles/data.html) but it was originally created at [stevedata](http://svmiller.com/stevedata/reference/gss_abortion.html#details). I explored a variety of datasets, but eventually settled on this dataset because it was a large dataset with a variety of variables in a context I could still understand. Much of the data I avoided because it would involve more data cleaning than exploration (e.g. [unicef data](https://data.unicef.org/resources/dataset/learning-and-skills/)) or from a context I didn't fully undestand (e.g. [health data](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=heart.csv)). I found this dataset to be both usable and comprehensible.
+The data I explored was a subset of [The General Society Survey](https://gss.norc.org/About-The-GSS) focused on stances around abortion. I found the dataset from [Rdatasets](https://vincentarelbundock.github.io/Rdatasets/articles/data.html) but it was originally created at [stevedata](http://svmiller.com/stevedata/reference/gss_abortion.html#details). I explored a variety of datasets but eventually settled on this dataset because it was a large dataset with a variety of variables in a context I could still understand. Much of the data I avoided because it would involve more data cleaning than exploration (e.g. [Unicef data](https://data.unicef.org/resources/dataset/learning-and-skills/)) or from a context I didn't fully understand (e.g. [health data](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=heart.csv)). I found this dataset to be both usable and comprehensible.
 
 ## 1 Data Parsing
 
-The first step of this was to clean the data. I had some parsing issues, and many missing values. Some of the missing values were due to parsing issues which I solved.
+The first step of this was to clean the data. I had some parsing issues and many missing values. Some of the missing values were due to parsing issues which I solved.
 
 <div align="center">
   <img height="300" alt="a" src="https://user-images.githubusercontent.com/53503018/136717881-14b7d002-cada-4171-ad32-cdaab5aa4298.png">
