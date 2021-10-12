@@ -11,7 +11,7 @@
 
 ## 0 Choosing a dataset to explore
 
-I found https://vincentarelbundock.github.io/Rdatasets/articles/data.html which allowed me to sort by number or rows and columns. At this point I chose my data based on the percieved "richness" of the data. So I sorted by rows and looked through a few csvs until I found one that had a good amount of columns that seemed to encode distinct information (as opposed to very similar or the same information).
+The data I explored was a subset of [The General Society Survey](https://gss.norc.org/About-The-GSS) focused on stances around abortion. I found the dataset from [Rdatasets](https://vincentarelbundock.github.io/Rdatasets/articles/data.html) but it was originally created at [stevedata](http://svmiller.com/stevedata/reference/gss_abortion.html#details).
 
 ## 1 Data Parsing
 
