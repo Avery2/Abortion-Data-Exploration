@@ -24,12 +24,13 @@ The first step of this was to clean the data by specifying data types, renaming 
 
 ## 2 Missing Values
 
+I started by visualizing the number of missing value for each column. When I ignored rows with missing values it removed too much data. You can see below when I remove rows with `NA` for `ab_any`, we go from `64814` values to `36794` values. This prompted me to investigate why it was there were so many missing values.
+
 <div align="center">
   <img width="45%" alt="0a00005c.png" src="https://user-images.githubusercontent.com/53503018/136874866-9b5d89d0-5232-49ec-9cc7-f6f16eaa1c74.png">
   <img width="45%" alt="0b00000missing_na_b.png" src="https://user-images.githubusercontent.com/53503018/136874867-819e426b-bc9a-4b7c-8842-66f9d2b324b4.png">
-  <img width="45%" alt="0c00005e.png" src="https://user-images.githubusercontent.com/53503018/136874870-16b44c0a-0cf8-48a9-8419-5ae742a3ea8f.png">
 
-  <p>Words go here.</p>
+  <p>Bar charts of missing values.</p>
 </div>
 
 ## 3 Missing Questions
@@ -39,7 +40,7 @@ The first step of this was to clean the data by specifying data types, renaming 
   <img width="45%" alt="2sce.png" src="https://user-images.githubusercontent.com/53503018/136874956-4564c8f0-c9df-41a4-a0b7-478e9c4fce2e.png">
   <img width="45%" alt="2missing_rels.png" src="https://user-images.githubusercontent.com/53503018/136874947-b975888d-e8db-4ed5-b5d1-e597ee08c5be.png">
 
-  <p>Words go here.</p>
+  <p>Missing values by year.</p>
 </div>
 
 ## 4 Missing Questions Pt. 2
@@ -49,6 +50,14 @@ The first step of this was to clean the data by specifying data types, renaming 
   <img width="45%" alt="3sci.png" src="https://user-images.githubusercontent.com/53503018/136875031-9cb46e4a-b6f5-4c66-a352-e15760a68417.png">
   <img width="45%" alt="3scg.png" src="https://user-images.githubusercontent.com/53503018/136875028-98f4e0b5-48d5-4d84-a1e2-936fb53e3421.png">
   <img width="45%" alt="3scf.png" src="https://user-images.githubusercontent.com/53503018/136875026-18af4569-b990-4517-8308-896880e85ed3.png">
+
+  <p>Proportion of missing values by year.</p>
+</div>
+
+## 4.5 Fill Missing Values
+
+<div align="center">
+  <img width="45%" alt="0c00005e.png" src="https://user-images.githubusercontent.com/53503018/136874870-16b44c0a-0cf8-48a9-8419-5ae742a3ea8f.png">
 
   <p>Words go here.</p>
 </div>
