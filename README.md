@@ -13,7 +13,13 @@
 
 The data I explored was a subset of [The General Society Survey](https://gss.norc.org/About-The-GSS) focused on stances around abortion. I found the dataset from [Rdatasets](https://vincentarelbundock.github.io/Rdatasets/articles/data.html) but it was originally created at [stevedata](http://svmiller.com/stevedata/reference/gss_abortion.html#details). I explored a variety of datasets but eventually settled on this dataset because it was a large dataset with a variety of variables in a context I could still understand. Much of the data I avoided because it would involve more data cleaning than exploration (e.g. [Unicef data](https://data.unicef.org/resources/dataset/learning-and-skills/)) or from a context I didn't fully understand (e.g. [health data](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=heart.csv)). I found this dataset to be both usable and comprehensible.
 
-## 1 Data Parsing
+### Initial Question
+
+My question was pretty direct.
+
+> Given this survey data, what different demographics are in favor of and against abortion?
+
+## 1 Why am I having parsing errors?
 
 The first step of this was to clean the data by specifying data types, renaming columns, and filling in missing values. During this step I also viewed the raw data and explored it with the (non-visual) R methods `dim`, `view`, `summary`, and `str`.
 <div align="center">
@@ -22,7 +28,7 @@ The first step of this was to clean the data by specifying data types, renaming 
   <p>R giving parsing issues and missing values.</p>
 </div>
 
-## 2 Missing Values
+## 2 How many missing values are there?
 
 I started by visualizing the number of missing value for each column. When I ignored rows with missing values it removed too much data. You can see below when I remove rows with `NA` for `ab_any`, we go from `64814` values to `36794` values. This prompted me to investigate why it was there were so many missing values.
 
@@ -33,7 +39,7 @@ I started by visualizing the number of missing value for each column. When I ign
   <p>Bar charts of missing values.</p>
 </div>
 
-## 3 Missing Questions
+## 3 Why are there so many missing values?
 
 I suspected that some of the missing data might be due to changes in the survey questions over the years. To visualize this, I plotted the number of missing values by year for each column and colored the bars if all of the values for that year were `NA`. Based on these graphs, saw that some questions weren't asked until the 2000s. I was able to confirm this assumption with the [archive of all GSS questionnaires](https://gss.norc.org/get-documentation/questionnaires). This meant that I needed to find a way to clean the data without dropping rows with `NA` values or the data would be skewed towards the present.
 
@@ -46,7 +52,7 @@ I suspected that some of the missing data might be due to changes in the survey 
   <p>Missing values by year and example questionnaire from 1990.</p>
 </div>
 
-## 4 Missing Questions Pt. 2
+## 4 Why are there so many missing values? Pt. 2
 
 By chance, I was coloring this graph by different values and decided to color it by the proportion of `NA` values. I noticed while some years would have `0.37` or `0.67` missing values. It didn't make sense that that many people would choose not to answer a question, because previous years would have only `0.05` missing values. This prompted me to investigate the questionnaires themselves, and I found that at some point there started to be multiple versions of the questionnaire. Some years only 1 of 3 of the questionnaires would have questions about abortion, so we see there would be `0.37` missing values.
 
@@ -58,9 +64,9 @@ By chance, I was coloring this graph by different values and decided to color it
   <p>Proportion of missing values by year and multiple questionnaires for 2000.</p>
 </div>
 
-## 4.5 Fill Missing Values
+## 4.5 How can I fix these missing values?
 
-Now that I knew the reason for the missing values, I had a better idea of how to replace them. I will skip the details for brevity, but besides `religious_activity` I was able to replace the `NA` values with something to represent that a question was not asked.
+Now that I knew the reason for the missing values, I had a better idea of how to replace them without misrepresenting the data. I will skip the details for brevity, but besides `religious_activity` I was able to replace the `NA` values with something to represent that a question was not asked.
 
 With this long step of cleaning data over, I could start plotting in Tableau.
 
@@ -71,7 +77,7 @@ With this long step of cleaning data over, I could start plotting in Tableau.
   <p>Old data on left, cleaned data on right.</p>
 </div>
 
-## 5 Bars
+## 5 Are there any obvious differences between demographics?
 
 I started by creating bar charts of some nominal variables (`Hispanic`, `Party`, `Sex`) against Abortion stances. I had expected to see more difference in these stances between groups, especially between the sexes, but it didn't seem there was a significant difference (as shown by the average line with 95% confidence interval). This also showed a difference in what people thought were acceptable reasons for abortion.
 
@@ -84,7 +90,7 @@ I started by creating bar charts of some nominal variables (`Hispanic`, `Party`,
   <p>Bar charts for abortion stances against different variables with average and 95% ci.</p>
 </div>
 
-## 6 Correlations
+## 6 Are there any correlations?
 
 For variables that I thought could be treated as ordinal, like `Party` adjusted to a numerical scale (Democratic to Independent to Republican), `Religious Activity`, `Age`, or `Education`. By plotting on a simple line chart I was able to see some simple linear correlations for `Education`, `Age`, and `Party`. `Religious Activity` had some interesting behaviour once it got to `11` on it's scale from `1` to `11` but I was unable to find the original scale from the questionnaires to find out what this meant (I suspect 11 encodes no religious activity) because the system became computerized which made it much harder to search for a specific question.
 
@@ -97,7 +103,7 @@ For variables that I thought could be treated as ordinal, like `Party` adjusted 
   <p>Line plots to show correlations between abortion stances and <code>Party</code>, <code>Religious Activity</code>, <code>Education</code>, and <code>Age</code>.</p>
 </div>
 
-## 7 Time
+## 7 What effect has time had on abortion stances?
 
 I plotted against time based on the negative correlation between `Age` and acceptance of abortion as well as because I was interested in seeing if the missing questions during some years might be noticible.
 
