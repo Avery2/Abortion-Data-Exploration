@@ -77,7 +77,7 @@ With this long step of cleaning data over, I could start plotting in Tableau.
 
 ## Are there any obvious differences between demographics?
 
-I started by creating bar charts of some nominal variables (`Hispanic`, `Party`, `Sex`) against Abortion stances. I had expected to see more difference in these stances between groups, especially between the sexes, but it didn't seem there was a significant difference (as shown by the average line with 95% confidence interval). This also showed a difference in what people thought were acceptable reasons for abortion.
+I started by creating bar charts of some nominal variables (`Hispanic`, `Party`, `Sex`) against Abortion stances. I had expected to see more difference in these stances between groups, especially between the sexes, but it didn't seem there was a significant difference. One unexpected thing this did highlight was differences between the different reasons for abortion. Some reasons like health were more accepted than a reason like poverty accross these demographics.
 
 <div align="center">
   <img width="45%" alt="Abortion Stances by Hispanic" src="https://user-images.githubusercontent.com/53503018/136875278-62288e2a-bb64-4050-b18f-8e8cda697c60.png">
