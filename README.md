@@ -64,6 +64,17 @@ The first step of this was to clean the data. I had some parsing issues, and man
   <p>Words go here.</p>
 </div>
 
+## 9 Bars
+
+<div align="center">
+  <img width="45%" alt="Abortion Stances by Hispanic" src="https://user-images.githubusercontent.com/53503018/136875278-62288e2a-bb64-4050-b18f-8e8cda697c60.png">
+  <img width="45%" alt="Abortion Stances by Party Bar" src="https://user-images.githubusercontent.com/53503018/136875282-647b6164-3f6b-4105-81cc-70a24c2c79e3.png">
+  <img width="45%" alt="Abortion Stances by Party Bar 2" src="https://user-images.githubusercontent.com/53503018/136875280-eb7cfd80-e46b-450e-80b9-32ff357d3efa.png">
+  <img width="45%" alt="Abortion Stances by Sex" src="https://user-images.githubusercontent.com/53503018/136875284-652698de-b7c2-4da2-8fe4-34b5c8c81e62.png">
+
+  <p>Words go here.</p>
+</div>
+
 ## 7 Correlations
 
 <div align="center">
@@ -81,17 +92,6 @@ The first step of this was to clean the data. I had some parsing issues, and man
   <img width="45%" alt="Abortion Stances by Year" src="https://user-images.githubusercontent.com/53503018/136875293-45133031-3bf2-413f-9bd2-db91f33d4454.png">
   <img width="45%" alt="Abortion Stances by Sex over Time" src="https://user-images.githubusercontent.com/53503018/136875290-c6ec8ef8-422f-4f96-bb98-dcf7868c79ba.png">
   <img width="45%" alt="Abortion Stances by Party over Time" src="https://user-images.githubusercontent.com/53503018/136875289-8fa623f7-eeda-4c00-9806-cc2440835648.png">
-
-  <p>Words go here.</p>
-</div>
-
-## 9 Bars
-
-<div align="center">
-  <img width="45%" alt="Abortion Stances by Hispanic" src="https://user-images.githubusercontent.com/53503018/136875278-62288e2a-bb64-4050-b18f-8e8cda697c60.png">
-  <img width="45%" alt="Abortion Stances by Party Bar" src="https://user-images.githubusercontent.com/53503018/136875282-647b6164-3f6b-4105-81cc-70a24c2c79e3.png">
-  <img width="45%" alt="Abortion Stances by Party Bar 2" src="https://user-images.githubusercontent.com/53503018/136875280-eb7cfd80-e46b-450e-80b9-32ff357d3efa.png">
-  <img width="45%" alt="Abortion Stances by Sex" src="https://user-images.githubusercontent.com/53503018/136875284-652698de-b7c2-4da2-8fe4-34b5c8c81e62.png">
 
   <p>Words go here.</p>
 </div>
