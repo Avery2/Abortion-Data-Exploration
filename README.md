@@ -28,9 +28,9 @@ A lot of the missing values besides `a` and `b` were an absence of opinions on a
 ## 3 R
 
 <div align="center">
-  <img width="45%" alt="rsca.png" src="./img/r_sca.png">
-<img width="45%" alt="rscb.png" src="./img/r_scb.png">
-<img width="45%" alt="rscc.png" src="./img/r_scc.png">
+  <img height="300" alt="rsca.png" src="./img/r_sca.png">
+  <img height="300" alt="rscb.png" src="./img/r_scb.png">
+  <img height="300" alt="rscc.png" src="./img/r_scc.png">
 
   <p>Words go here.</p>
 </div>
