@@ -123,10 +123,10 @@ raw_abr$hispanic_ethnicity <- NULL
 
 ```{r}
 raw_abr
-# raw_abr %>% dim()
-# raw_abr %>% view()
+raw_abr %>% dim()
+raw_abr %>% view()
 raw_abr %>% summary()
-# raw_abr %>% str()
+raw_abr %>% str()
 ```
 
 ### Missing Values

@@ -15,7 +15,8 @@ The data I explored was a subset of [The General Society Survey](https://gss.nor
 
 ## 1 Data Parsing
 
-The first step of this was to clean the data by specifying data types, renaming columns, and filling in missing values.
+The first step of this was to clean the data by specifying data types, renaming columns, and filling in missing values. Here, I did the first data exploration by checking each column to get the proportion of missing values. As you can see, two columns have `p > 0.6` where `p` is the proportion of `NA` values.
+
 <div align="center">
   <img height="300" alt="a" src="https://user-images.githubusercontent.com/53503018/136717881-14b7d002-cada-4171-ad32-cdaab5aa4298.png">
   <img height="300" alt="b" src="https://user-images.githubusercontent.com/53503018/136717883-aa207ceb-00b2-4259-bd9d-8323d594e036.png">
@@ -23,6 +24,8 @@ The first step of this was to clean the data by specifying data types, renaming 
 </div>
 
 ## 2 R
+
+Now that the data is at least loaded into R (ignoring the issue of so many missing values) I was able to start data exploration.
 
 <div align="center">
   <img height="300" alt="rsca.png" src="https://user-images.githubusercontent.com/53503018/136874793-18c1902e-0790-4d27-8029-275178a516c6.png">
