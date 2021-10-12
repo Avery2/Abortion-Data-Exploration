@@ -54,7 +54,7 @@ I suspected that some of the missing data might be due to changes in the survey 
 
 ## 4 Why are there so many missing values? Pt. 2
 
-By chance, I was coloring this graph by different values and decided to color it by the proportion of `NA` values. I noticed while some years would have `0.37` or `0.67` missing values. It didn't make sense that that many people would choose not to answer a question, because previous years would have only `0.05` missing values. This prompted me to investigate the questionnaires themselves, and I found that at some point there started to be multiple versions of the questionnaire. Some years only 1 of 3 of the questionnaires would have questions about abortion, so we see there would be `0.37` missing values.
+I was coloring this graph by different values and decided to color it by the proportion of `NA` values. I noticed while some years would have `0.37` or `0.67` missing values. It didn't make sense that that many people would choose not to answer a question, because previous years would have only `0.05` missing values. This prompted me to investigate the questionnaires themselves, and I found that at some point there started to be multiple versions of the questionnaire. Some years only 1 of 3 of the questionnaires would have questions about abortion, so there would be `1/3 = 0.37` missing values.
 
 <div align="center">
   <img width="85%" alt="3sci.png" src="https://user-images.githubusercontent.com/53503018/136875031-9cb46e4a-b6f5-4c66-a352-e15760a68417.png">
@@ -64,7 +64,7 @@ By chance, I was coloring this graph by different values and decided to color it
   <p>Proportion of missing values by year and multiple questionnaires for 2000.</p>
 </div>
 
-## 4.5 How can I fix these missing values?
+## 5 How can I fix these missing values?
 
 Now that I knew the reason for the missing values, I had a better idea of how to replace them without misrepresenting the data. I will skip the details for brevity, but besides `religious_activity` I was able to replace the `NA` values with something to represent that a question was not asked.
 
@@ -77,7 +77,7 @@ With this long step of cleaning data over, I could start plotting in Tableau.
   <p>Old data on left, cleaned data on right.</p>
 </div>
 
-## 5 Are there any obvious differences between demographics?
+## 6 Are there any obvious differences between demographics?
 
 I started by creating bar charts of some nominal variables (`Hispanic`, `Party`, `Sex`) against Abortion stances. I had expected to see more difference in these stances between groups, especially between the sexes, but it didn't seem there was a significant difference (as shown by the average line with 95% confidence interval). This also showed a difference in what people thought were acceptable reasons for abortion.
 
@@ -90,7 +90,7 @@ I started by creating bar charts of some nominal variables (`Hispanic`, `Party`,
   <p>Bar charts for abortion stances against different variables with average and 95% ci.</p>
 </div>
 
-## 6 Are there any correlations?
+## 7 Are there any correlations?
 
 For variables that I thought could be treated as ordinal, like `Party` adjusted to a numerical scale (Democratic to Independent to Republican), `Religious Activity`, `Age`, or `Education`. By plotting on a simple line chart I was able to see some simple linear correlations for `Education`, `Age`, and `Party`. `Religious Activity` had some interesting behaviour once it got to `11` on it's scale from `1` to `11` but I was unable to find the original scale from the questionnaires to find out what this meant (I suspect 11 encodes no religious activity) because the system became computerized which made it much harder to search for a specific question.
 
@@ -103,7 +103,7 @@ For variables that I thought could be treated as ordinal, like `Party` adjusted 
   <p>Line plots to show correlations between abortion stances and <code>Party</code>, <code>Religious Activity</code>, <code>Education</code>, and <code>Age</code>.</p>
 </div>
 
-## 7 What effect has time had on abortion stances?
+## 8 What effect has time had on abortion stances?
 
 I plotted against time based on the negative correlation between `Age` and acceptance of abortion as well as because I was interested in seeing if the missing questions during some years might be noticible.
 
