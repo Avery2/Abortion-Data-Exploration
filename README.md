@@ -15,24 +15,14 @@ The data I explored was a subset of [The General Society Survey](https://gss.nor
 
 ## 1 Data Parsing
 
-The first step of this was to clean the data by specifying data types, renaming columns, and filling in missing values.
+The first step of this was to clean the data by specifying data types, renaming columns, and filling in missing values. During this step I also viewed the raw data and explored it with the (non-visual) R methods `dim`, `view`, `summary`, and `str`.
 <div align="center">
   <img height="300" alt="a" src="https://user-images.githubusercontent.com/53503018/136717881-14b7d002-cada-4171-ad32-cdaab5aa4298.png">
   <img height="300" alt="b" src="https://user-images.githubusercontent.com/53503018/136717883-aa207ceb-00b2-4259-bd9d-8323d594e036.png">
   <p>R giving parsing issues and missing values.</p>
 </div>
 
-## 2 R
-
-<div align="center">
-  <img height="300" alt="rsca.png" src="https://user-images.githubusercontent.com/53503018/136874793-18c1902e-0790-4d27-8029-275178a516c6.png">
-  <img height="300" alt="rscb.png" src="https://user-images.githubusercontent.com/53503018/136874796-81a391ea-88e7-4677-8c5a-64ce9ba4a664.png">
-  <img height="300" alt="rscc.png" src="https://user-images.githubusercontent.com/53503018/136874798-cf854caf-0e2f-4b3b-82f2-89ab026ebf0b.png">
-
-  <p>Words go here.</p>
-</div>
-
-## 3 Missing Values
+## 2 Missing Values
 
 <div align="center">
   <img width="45%" alt="0a00005c.png" src="https://user-images.githubusercontent.com/53503018/136874866-9b5d89d0-5232-49ec-9cc7-f6f16eaa1c74.png">
@@ -42,7 +32,7 @@ The first step of this was to clean the data by specifying data types, renaming 
   <p>Words go here.</p>
 </div>
 
-## 4 Missing Questions
+## 3 Missing Questions
 
 <div align="center">
   <img width="45%" alt="2scd.png" src="https://user-images.githubusercontent.com/53503018/136874948-3ac63d50-4c18-4579-99be-fd7f5190efae.png">
@@ -52,7 +42,7 @@ The first step of this was to clean the data by specifying data types, renaming 
   <p>Words go here.</p>
 </div>
 
-## 5 Missing Questions Pt. 2
+## 4 Missing Questions Pt. 2
 
 <div align="center">
   <img width="45%" alt="3sch.png" src="https://user-images.githubusercontent.com/53503018/136875029-65aaf7bb-8dff-4ba1-aefc-29cf462a7e31.png">
@@ -63,7 +53,7 @@ The first step of this was to clean the data by specifying data types, renaming 
   <p>Words go here.</p>
 </div>
 
-## 6 Bars
+## 5 Bars
 
 <div align="center">
   <img width="45%" alt="Abortion Stances by Hispanic" src="https://user-images.githubusercontent.com/53503018/136875278-62288e2a-bb64-4050-b18f-8e8cda697c60.png">
@@ -74,7 +64,7 @@ The first step of this was to clean the data by specifying data types, renaming 
   <p>Words go here.</p>
 </div>
 
-## 7 Correlations
+## 6 Correlations
 
 <div align="center">
   <img width="45%" alt="1Abortion Stances by Party.png" src="https://user-images.githubusercontent.com/53503018/136875123-f6b1b241-cb3f-4b3c-9828-d4038137fac3.png">
@@ -85,7 +75,7 @@ The first step of this was to clean the data by specifying data types, renaming 
   <p>Words go here.</p>
 </div>
 
-## 8 Time
+## 7 Time
 
 <div align="center">
   <img width="45%" alt="Abortion Stances by Year" src="https://user-images.githubusercontent.com/53503018/136875293-45133031-3bf2-413f-9bd2-db91f33d4454.png">
