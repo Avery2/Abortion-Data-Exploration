@@ -39,7 +39,7 @@ I started by visualizing the number of missing value for each column. When I ign
 
 ## Why are there so many missing values?
 
-Suspecting the missing data was because of changes in the survey questions I plotted the number of missing values by year and colored the bars if all of the values for that year were `NA`. Based on these graphs, I saw that some questions weren't asked until the 2000s. I was able to confirm this assumption with the [archive of all GSS questionnaires](https://gss.norc.org/get-documentation/questionnaires). This meant that I needed to find a way to clean the data without dropping rows with `NA` values or the data would be skewed towards the present.
+Suspecting the missing data was because of changes in the survey questions I plotted the number of missing values by year and colored the bars if all of the values for that year were `NA`. Based on these graphs, I saw that some questions weren't asked until the 2000s. I was able to confirm this assumption with the archive of all GSS questionnaires [^6]. This meant that I needed to find a way to clean the data without dropping rows with `NA` values or the data would be skewed towards the present.
 
 <div align="center">
   <img width="45%" alt="2scd.png" src="https://user-images.githubusercontent.com/53503018/136874948-3ac63d50-4c18-4579-99be-fd7f5190efae.png">
@@ -52,7 +52,7 @@ Suspecting the missing data was because of changes in the survey questions I plo
 
 ## Why are there so many missing values? Pt. 2
 
-I was coloring this graph by different values and decided to color it by the proportion of `NA` values. I noticed while some years would have `0.37` or `0.67` missing values. It didn't make sense that that many people would choose not to answer a question, because previous years would have only `0.05` missing values. This prompted me to investigate the questionnaires themselves, and I found that at some point there started to be multiple versions of the questionnaire. Some years only 1 of 3 of the questionnaires would have questions about abortion, so there would be `1/3 = 0.37` missing values.
+I was decided to color by the proportion of `NA` values and noticed while some years would have `0.37` or `0.67` missing values. This prompted me to investigate the questionnaires themselves [^6], and I found that the GSS had started to give multiple versions of the questionnaire. Some years only 1 of 3 of the questionnaires would have questions about abortion, so there would be `1/3 = 0.37` missing values.
 
 <div align="center">
   <img width="85%" alt="3sci.png" src="https://user-images.githubusercontent.com/53503018/136875031-9cb46e4a-b6f5-4c66-a352-e15760a68417.png">
@@ -158,3 +158,4 @@ When it's listed out it seems *really* simplified and reductionist
 [^3]: http://svmiller.com/stevedata/reference/gss_abortion.html#details
 [^4]: https://data.unicef.org/resources/dataset/learning-and-skills/
 [^5]: https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=heart.csv
+[^6]: https://gss.norc.org/get-documentation/questionnaires
