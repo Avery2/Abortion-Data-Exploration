@@ -11,7 +11,7 @@
 
 ## 0 Choosing a dataset to explore
 
-The data I explored was a subset of [The General Society Survey](https://gss.norc.org/About-The-GSS) focused on stances around abortion. I found the dataset from [Rdatasets](https://vincentarelbundock.github.io/Rdatasets/articles/data.html) but it was originally created at [stevedata](http://svmiller.com/stevedata/reference/gss_abortion.html#details). I explored a variety of datasets but eventually settled on this dataset because it was a large dataset with a variety of variables in a context I could still understand. Much of the data I avoided because it would involve more data cleaning than exploration (e.g. [Unicef data](https://data.unicef.org/resources/dataset/learning-and-skills/)) or from a context I didn't fully understand (e.g. [health data](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=heart.csv)). I found this dataset to be both usable and comprehensible. For brevity, I have described each variable in a table at the bottom of this document.
+The data I explored was a subset of The General Society Survey [^1] focused on stances around abortion. I found the dataset from Rdatasets [^2] but it was originally created at stevedata [^3]. I explored a variety of datasets but eventually settled on this dataset because it was a large dataset with a variety of variables in a context I could still understand. Much of the data I avoided because it would involve more data cleaning than exploration (e.g. Unicef data [^4]) or from a context I didn't fully understand (e.g. health data [^5]). I found this dataset to be both usable and comprehensible. For brevity, I have described each variable in a table at the bottom of this document.
 
 ### Initial Question
 
@@ -141,3 +141,9 @@ The chart by party over time was most interesting because you can see the stance
 | ab_rape | a numeric vector that equals 1 if the respondent thinks abortion should be legal if the woman became pregnant because of a rape. 0 indicates no support for abortion in this circumstance. |
 | ab_single | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman is single and does not want to marry the man who impregnated her. 0 indicates no support for abortion in this circumstance. |
 | hispanic | a dummy variable that equals 1 if the respondent is any way Hispanic |
+
+[^1]: https://gss.norc.org/About-The-GSS
+[^2]: https://vincentarelbundock.github.io/Rdatasets/articles/data.html
+[^3]: http://svmiller.com/stevedata/reference/gss_abortion.html#details
+[^4]: https://data.unicef.org/resources/dataset/learning-and-skills/
+[^5]: https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=heart.csv
