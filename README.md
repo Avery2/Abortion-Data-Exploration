@@ -15,9 +15,7 @@ The data I explored was a subset of The General Society Survey [^1] focused on s
 
 ### Initial Question
 
-My question was pretty direct.
-
-> Given this survey data, what different demographics are in favor of and against abortion?
+Given this survey data, what different demographics are in favor of and against abortion?
 
 ## 1 Why am I having parsing errors?
 
