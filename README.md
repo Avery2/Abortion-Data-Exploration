@@ -51,7 +51,7 @@ I suspected that some of the missing data might be due to changes in the survey 
 By chance, I was coloring this graph by different values and decided to color it by the proportion of `NA` values. I noticed while some years would have `0.37` or `0.67` missing values. It didn't make sense that that many people would choose not to answer a question, because previous years would have only `0.05` missing values. This prompted me to investigate the questionnaires themselves, and I found that at some point there started to be multiple versions of the questionnaire. Some years only 1 of 3 of the questionnaires would have questions about abortion, so we see there would be `0.37` missing values.
 
 <div align="center">
-  <img width="45%" alt="3sci.png" src="https://user-images.githubusercontent.com/53503018/136875031-9cb46e4a-b6f5-4c66-a352-e15760a68417.png">
+  <img width="85%" alt="3sci.png" src="https://user-images.githubusercontent.com/53503018/136875031-9cb46e4a-b6f5-4c66-a352-e15760a68417.png">
   <img width="45%" alt="3scg.png" src="https://user-images.githubusercontent.com/53503018/136875028-98f4e0b5-48d5-4d84-a1e2-936fb53e3421.png">
   <img width="45%" alt="3scf.png" src="https://user-images.githubusercontent.com/53503018/136875026-18af4569-b990-4517-8308-896880e85ed3.png">
 
