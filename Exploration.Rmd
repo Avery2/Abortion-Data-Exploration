@@ -266,6 +266,7 @@ graph_missing <- function(col) {
          y = "Number of missing values")
 }
 graph_missing("religious_activity")
+graph_missing("hispanic")
 graph_missing("ab_any")
 graph_missing("ab_rape")
 graph_missing("ab_defect")

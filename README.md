@@ -35,32 +35,40 @@ I started by visualizing the number of missing value for each column. When I ign
 
 ## 3 Missing Questions
 
+I suspected that some of the missing data might be due to changes in the survey questions over the years. To visualize this, I plotted the number of missing values by year for each column and colored the bars if all of the values for that year were `NA`. Based on these graphs, saw that some questions weren't asked until the 2000s. I was able to confirm this assumption with the [archive of all GSS questionnaires](https://gss.norc.org/get-documentation/questionnaires). This meant that I needed to find a way to clean the data without dropping rows with `NA` values or the data would be skewed towards the present.
+
 <div align="center">
   <img width="45%" alt="2scd.png" src="https://user-images.githubusercontent.com/53503018/136874948-3ac63d50-4c18-4579-99be-fd7f5190efae.png">
   <img width="45%" alt="2sce.png" src="https://user-images.githubusercontent.com/53503018/136874956-4564c8f0-c9df-41a4-a0b7-478e9c4fce2e.png">
   <img width="45%" alt="2missing_rels.png" src="https://user-images.githubusercontent.com/53503018/136874947-b975888d-e8db-4ed5-b5d1-e597ee08c5be.png">
+  <img width="45%" alt="3sch.png" src="https://user-images.githubusercontent.com/53503018/136875029-65aaf7bb-8dff-4ba1-aefc-29cf462a7e31.png">
 
-  <p>Missing values by year.</p>
+  <p>Missing values by year and example questionnaire from 1990.</p>
 </div>
 
 ## 4 Missing Questions Pt. 2
 
+By chance, I was coloring this graph by different values and decided to color it by the proportion of `NA` values. I noticed while some years would have `0.37` or `0.67` missing values. It didn't make sense that that many people would choose not to answer a question, because previous years would have only `0.05` missing values. This prompted me to investigate the questionnaires themselves, and I found that at some point there started to be multiple versions of the questionnaire. Some years only 1 of 3 of the questionnaires would have questions about abortion, so we see there would be `0.37` missing values.
+
 <div align="center">
-  <img width="45%" alt="3sch.png" src="https://user-images.githubusercontent.com/53503018/136875029-65aaf7bb-8dff-4ba1-aefc-29cf462a7e31.png">
   <img width="45%" alt="3sci.png" src="https://user-images.githubusercontent.com/53503018/136875031-9cb46e4a-b6f5-4c66-a352-e15760a68417.png">
   <img width="45%" alt="3scg.png" src="https://user-images.githubusercontent.com/53503018/136875028-98f4e0b5-48d5-4d84-a1e2-936fb53e3421.png">
   <img width="45%" alt="3scf.png" src="https://user-images.githubusercontent.com/53503018/136875026-18af4569-b990-4517-8308-896880e85ed3.png">
 
-  <p>Proportion of missing values by year.</p>
+  <p>Proportion of missing values by year and multiple questionnaires for 2000.</p>
 </div>
 
 ## 4.5 Fill Missing Values
+
+Now that I knew the reason for the missing values, I had a better idea of how to replace them. I will skip the details for brevity, but besides `religious_activity` I was able to replace the `NA` values with something to represent that a question was not asked.
+
+With this long step of cleaning data over, I could start plotting in Tableau.
 
 <div align="center">
   <img width="45%" alt="0a00005c.png" src="https://user-images.githubusercontent.com/53503018/136874866-9b5d89d0-5232-49ec-9cc7-f6f16eaa1c74.png">
   <img width="45%" alt="0c00005e.png" src="https://user-images.githubusercontent.com/53503018/136874870-16b44c0a-0cf8-48a9-8419-5ae742a3ea8f.png">
 
-  <p>New cleaned data.</p>
+  <p>Old data on left, cleaned data on right.</p>
 </div>
 
 ## 5 Bars
@@ -94,3 +102,26 @@ I started by visualizing the number of missing value for each column. When I ign
 
   <p>Abortion stances by year overall and for both <code>Sex</code> and <code>Party</code>.</p>
 </div>
+
+## Variable Table
+
+| Variable | Description |
+|---|---|
+| id | a unique respondent identifier |
+| year | the survey year |
+| age | the respondent's age in years |
+| race | the respondent's race, as character variable |
+| sex | the respondent's gender, as character variable |
+| hispaniccat | the respondent's Hispanic ethnicity, as character variable |
+| educ | how many years the respondent spent in school |
+| partyid | the respondent's party identification, as character variable |
+| relactiv | the self-reported religious activity of the respondent on a 1:11 scale |
+| abany | a binary variable that equals 1 if the respondent thinks abortion should be legal for any reason. 0 indicates no support for abortion for any reason. |
+| abdefect | a numeric vector that equals 1 if the respondent thinks abortion should be legal if there is a serious defect in the fetus. 0 indicates no support for abortion in this circumstance. |
+| abnomore | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a woman is pregnant but wants no more children. 0 indicates no support for abortion in this circumstance. |
+| abhlth | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman's health is in danger. 0 indicates no support for abortion in this circumstance. |
+| abpoor | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman is poor and cannot afford more children. 0 indicates no support for abortion in this circumstance. |
+| abrape | a numeric vector that equals 1 if the respondent thinks abortion should be legal if the woman became pregnant because of a rape. 0 indicates no support for abortion in this circumstance. |
+| absingle | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman is single and does not want to marry the man who impregnated her. 0 indicates no support for abortion in this circumstance. |
+| pid | `partyid` recoded so that 7 = NA |
+| hispanic | a dummy variable that equals 1 if the respondent is any way Hispanic |
