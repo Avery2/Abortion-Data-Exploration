@@ -38,9 +38,9 @@ A lot of the missing values besides `a` and `b` were an absence of opinions on a
 ## 4 Missing Values
 
 <div align="center">
+  <img width="45%" alt="0a00005c.png" src="./img/0_a00005c.png">
+  <img width="45%" alt="0b00000missing_na_b.png" src="./img/0_b00000missing_na_b.png">
   <img width="45%" alt="0c00005e.png" src="./img/0_c00005e.png">
-<img width="45%" alt="0b00000missing_na_b.png" src="./img/0_b00000missing_na_b.png">
-<img width="45%" alt="0a00005c.png" src="./img/0_a00005c.png">
 
   <p>Words go here.</p>
 </div>
