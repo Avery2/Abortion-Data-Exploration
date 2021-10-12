@@ -119,6 +119,19 @@ The chart by party over time was most interesting because you can see the stance
   <p>Abortion stances by year overall and for both <code>Sex</code> and <code>Party</code>.</p>
 </div>
 
+## Summary of Lessons Learned
+
+I learned abortion has become more accepted over time.
+
+Key demographics:
+
+- Young
+- (In recent years) Democratic
+- (maybe) Religiously inactive
+- More years of education
+
+When it's listed out it seems *really* simplified and reductionist
+
 ## Variable Table
 
 | Variable | Description |
