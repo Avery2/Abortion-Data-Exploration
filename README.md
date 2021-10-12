@@ -90,7 +90,7 @@ I started by creating bar charts of some nominal variables (`Hispanic`, `Party`,
 
 ## Are there any correlations?
 
-For variables that I thought could be treated as ordinal, like `Religious Activity`, `Age`, `Education`, or `Party` adjusted to a numerical scale from Democratic to Republican. By plotting on a simple line chart I was able to see some simple linear correlations for `Education`, `Age`, and `Party`. `Religious Activity` had some interesting behaviour once it got to `11` on it's scale from `1` to `11` but I was unable to find the original scale from the questionnaires to find out what this meant (I suspect 11 encodes no religious activity) because the system became computerized which made it much harder to search for a specific question.
+For variables that I thought could be treated as ordinal, like `Religious Activity`, `Age`, `Education`, or `Party` (adjusted to a numerical scale from Democratic to Republican). By plotting on a simple line chart I was able to see some simple linear correlations for `Education`, `Age`, and `Party`. `Religious Activity` (on scale from 1:11) had some interesting behaviour once it got to `11` but I was unable to find the original scale from the questionnaires to find out what this meant because the questionnaire had become computerized which made it much harder to search for a specific question.
 
 <div align="center">
   <img width="45%" alt="1Abortion Stances by Party.png" src="https://user-images.githubusercontent.com/53503018/136875123-f6b1b241-cb3f-4b3c-9828-d4038137fac3.png">
