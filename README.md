@@ -19,7 +19,7 @@ Given this survey data, what different demographics are in favor of and against 
 
 ## Why am I having parsing errors?
 
-The first step of this was to clean the data by specifying data types, renaming columns, and filling in missing values. During this step I also viewed the raw data and explored it with the (non-visual) R methods `dim`, `view`, `summary`, and `str`.
+The first step was to clean the data by specifying data types, renaming columns, and filling in missing values. During this step I also viewed the raw data and explored it with the (non-visual) R methods `dim`, `view`, `summary`, and `str`. This step is simple but it was an important step in the data exploration because all the parsing errors forced me to become familar with the format of the data.
 <div align="center">
   <img height="300" alt="a" src="https://user-images.githubusercontent.com/53503018/136717881-14b7d002-cada-4171-ad32-cdaab5aa4298.png">
   <img height="300" alt="b" src="https://user-images.githubusercontent.com/53503018/136717883-aa207ceb-00b2-4259-bd9d-8323d594e036.png">
