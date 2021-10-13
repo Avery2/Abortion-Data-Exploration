@@ -119,7 +119,11 @@ Now let us return to the original question:
 
 > Given this survey data, what different demographics tend to be in favor of or against abortion?
 
-![FinalVisual](https://user-images.githubusercontent.com/53503018/137047575-6d13b5b9-3b51-4f61-9fa5-c156bdc92ed1.png)
+<div align="center">
+  <img width="85%" alt="FinalVisual" src="https://user-images.githubusercontent.com/53503018/136875293-45133031-3bf2-413f-9bd2-db91f33d4454.png">
+
+  <p>Final visualization emphasizing <code>Age</code>, <code>Education</code>, and <code>Party</code> (over time)</p>
+</div>
 
 Summary goes here.
 
