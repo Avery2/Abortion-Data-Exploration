@@ -1,14 +1,5 @@
 # Writeup
 
-<!-- <div align="center">
-  <img width="45%" alt="" src="">
-  <img width="45%" alt="" src="">
-  <img width="45%" alt="" src="">
-  <img width="45%" alt="" src="">
-
-  <p>Words go here.</p>
-</div> -->
-
 ## Choosing a dataset to explore
 
 The data I explored was a subset of The General Society Survey [^1] focused on stances around abortion. I found the dataset from Rdatasets [^2] but it was originally created at stevedata [^3]. I explored a variety of datasets but eventually settled on this dataset because it was a large dataset with a variety of variables in a context I could still understand. Much of the data I avoided because it would involve more data cleaning than exploration (e.g. Unicef data [^4]) or from a context I didn't fully understand (e.g. health data [^5]). I found this dataset to be both usable and comprehensible. For brevity, I have described each variable in a table at the bottom of this document.
