@@ -108,7 +108,7 @@ I plotted against time next because of the correaltion with `Age` shown above an
 <div align="center">
   <img width="45%" alt="Abortion Stances by Year" src="https://user-images.githubusercontent.com/53503018/136875293-45133031-3bf2-413f-9bd2-db91f33d4454.png">
   <img width="45%" alt="Abortion Stances by Sex over Time" src="https://user-images.githubusercontent.com/53503018/136875290-c6ec8ef8-422f-4f96-bb98-dcf7868c79ba.png">
-  <img width="45%" alt="Abortion Stances by Party over Time" src="https://user-images.githubusercontent.com/53503018/137045925-2e5aed9c-8960-4d4a-81f3-a0eae1d9518b.png">
+  <img width="45%" alt="Abortion Stances by Party over Time" src="https://user-images.githubusercontent.com/53503018/137047552-7b6a2da4-a841-4be6-839e-83e7a2625aed.png">
 
   <p>Abortion stances by year overall and for both <code>Sex</code> and <code>Party</code>.</p>
 </div>
@@ -118,6 +118,8 @@ I plotted against time next because of the correaltion with `Age` shown above an
 Now let us return to the original question:
 
 > Given this survey data, what different demographics tend to be in favor of or against abortion?
+
+![FinalVisual](https://user-images.githubusercontent.com/53503018/137047575-6d13b5b9-3b51-4f61-9fa5-c156bdc92ed1.png)
 
 Summary goes here.
 
