@@ -108,7 +108,7 @@ I plotted against time next because of the correaltion with `Age` shown above an
 <div align="center">
   <img width="45%" alt="Abortion Stances by Year" src="https://user-images.githubusercontent.com/53503018/136875293-45133031-3bf2-413f-9bd2-db91f33d4454.png">
   <img width="45%" alt="Abortion Stances by Sex over Time" src="https://user-images.githubusercontent.com/53503018/136875290-c6ec8ef8-422f-4f96-bb98-dcf7868c79ba.png">
-  <img width="45%" alt="Abortion Stances by Party over Time" src="https://user-images.githubusercontent.com/53503018/136875289-8fa623f7-eeda-4c00-9806-cc2440835648.png">
+  <img width="45%" alt="Abortion Stances by Party over Time" src="https://user-images.githubusercontent.com/53503018/137045925-2e5aed9c-8960-4d4a-81f3-a0eae1d9518b.png">
 
   <p>Abortion stances by year overall and for both <code>Sex</code> and <code>Party</code>.</p>
 </div>
