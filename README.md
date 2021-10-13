@@ -113,6 +113,25 @@ I plotted against time next because of the correaltion with `Age` shown above an
   <p>Abortion stances by year overall and for both <code>Sex</code> and <code>Party</code>.</p>
 </div>
 
+## What insights do I find most interesting?
+
+Based on previous visualizations, I found these insights the most interesting:
+
+1. The correlation between `Education` and abortion stances
+2. The correlation between `Age` and abortion stances
+3. The divergence of abortion stances by `Party` over time
+4. The difference between reasons for abortion
+5. The reason for missing values (survey question changes)
+
+I created new visuals to highlight each of these visuals besides the last point (because it was part of data cleaning). I combined points 2 and 4 by grouping by reason before age.
+
+<div align="center">
+  <img width="85%" alt="Abortion Stances by Age" src="https://user-images.githubusercontent.com/53503018/137049941-a3a961a1-f3f2-41cf-822f-a039964a1e4a.png">
+  <img width="85%" alt="Abortion Stances by Education" src="https://user-images.githubusercontent.com/53503018/137049944-146be31e-8b69-4c2d-9fa7-45b80662b1d6.png">
+
+  <p>Newly created visuals.</p>
+</div>
+
 ## Summary of Lessons Learned
 
 Now let us return to the original question:
