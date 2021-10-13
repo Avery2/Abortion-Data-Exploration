@@ -148,6 +148,8 @@ I learned a lot during the data exploration. A lot fo the interesting moments an
 
 ## Appendix
 
+[source code](https://github.com/Avery2/Abortion-Data-Exploration)
+
 ### Variable Description Table
 
 | Variable | Description |
@@ -175,5 +177,3 @@ I learned a lot during the data exploration. A lot fo the interesting moments an
 [^4]: https://data.unicef.org/resources/dataset/learning-and-skills/
 [^5]: https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=heart.csv
 [^6]: https://gss.norc.org/get-documentation/questionnaires
-
-[source on GitHub](https://github.com/Avery2/Abortion-Data-Exploration)
