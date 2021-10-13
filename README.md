@@ -7,6 +7,7 @@ The data I explored was a subset of The General Society Survey [^1] focused on s
 ### Initial Question
 
 Given this survey data, what different demographics tend to be in favor of or against abortion?
+<div style="page-break-after: always;"></div>
 
 ## Why am I having parsing errors?
 
@@ -17,6 +18,7 @@ The first step was to clean the data by specifying data types, renaming columns,
   <img height="300" alt="b" src="https://user-images.githubusercontent.com/53503018/136717883-aa207ceb-00b2-4259-bd9d-8323d594e036.png">
   <p>R giving parsing issues and missing values.</p>
 </div>
+<div style="page-break-after: always;"></div>
 
 ## How many missing values are there?
 
@@ -28,6 +30,7 @@ I started by visualizing the number of missing values for each column. When I ig
 
   <p>Bar charts of missing values.</p>
 </div>
+<div style="page-break-after: always;"></div>
 
 ## Why are there so many missing values?
 
@@ -41,6 +44,7 @@ Suspecting the missing data was because of changes in the survey questions I plo
 
   <p>Missing values by year and example questionnaire from 1990.</p>
 </div>
+<div style="page-break-after: always;"></div>
 
 ## Why are there so many missing values? Pt. 2
 
@@ -53,6 +57,7 @@ I was decided to color by the proportion of `NA` values and noticed while some y
 
   <p>Proportion of missing values by year and multiple questionnaires for 2000.</p>
 </div>
+<div style="page-break-after: always;"></div>
 
 ## How can I fix these missing values?
 
@@ -66,6 +71,7 @@ Now that I knew the reason for the missing values, I had a better idea of how to
 </div>
 
 With this long step of cleaning data over, I could start plotting in Tableau.
+<div style="page-break-after: always;"></div>
 
 ## Are there any obvious differences between demographics?
 
@@ -79,6 +85,7 @@ I started by creating bar charts of some nominal variables (`Hispanic`, `Party`,
 
   <p>Bar charts for abortion stances against different variables with average and 95% ci.</p>
 </div>
+<div style="page-break-after: always;"></div>
 
 ## Are there any correlations?
 
@@ -92,6 +99,7 @@ For variables that I thought could be treated as ordinal, like `Religious Activi
 
   <p>Line plots to show correlations between abortion stances and <code>Party</code>, <code>Religious Activity</code>, <code>Education</code>, and <code>Age</code>.</p>
 </div>
+<div style="page-break-after: always;"></div>
 
 ## What effect has time had on abortion stances?
 
@@ -104,6 +112,7 @@ I plotted against time next because of the correlation with `Age` shown above an
 
   <p>Abortion stances by year overall and for both <code>Sex</code> and <code>Party</code>.</p>
 </div>
+<div style="page-break-after: always;"></div>
 
 ## What insights do I find most interesting?
 
@@ -123,6 +132,7 @@ I created new visuals to highlight each of these besides the last point (because
 
   <p>Newly created visuals.</p>
 </div>
+<div style="page-break-after: always;"></div>
 
 ## Summary of Lessons Learned
 
@@ -137,6 +147,7 @@ I found age, political party, and education to be demographic information releva
 
   <p>Final visualization emphasizing <code>Age</code>, <code>Education</code>, and <code>Party</code> (over time)</p>
 </div>
+<div style="page-break-after: always;"></div>
 
 ## Appendix
 
@@ -162,6 +173,7 @@ I found age, political party, and education to be demographic information releva
 | ab_rape | a numeric vector that equals 1 if the respondent thinks abortion should be legal if the woman became pregnant because of a rape. 0 indicates no support for abortion in this circumstance. |
 | ab_single | a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman is single and does not want to marry the man who impregnated her. 0 indicates no support for abortion in this circumstance. |
 | hispanic | a dummy variable that equals 1 if the respondent is any way Hispanic |
+<div style="page-break-after: always;"></div>
 
 [^1]: https://gss.norc.org/About-The-GSS
 [^2]: https://vincentarelbundock.github.io/Rdatasets/articles/data.html
