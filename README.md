@@ -138,15 +138,17 @@ Now let us return to the original question:
 
 > Given this survey data, what different demographics tend to be in favor of or against abortion?
 
+I learned a lot during the data exploration. A lot fo the interesting moments and stuff was about data parsing. Then it was intersting correlations. I found it really satisfying how the line graph was able to visualize how stances on abortion diverged along party lines. I also found it surprising I wasn't able to find significant differences among certain demographics like sex where I expected there to be a major difference. This is the final visualization I made that emphasizes the points that I think were the most interesting as described in the previous section.
+
 <div align="center">
   <img width="85%" alt="FinalVisual" src="https://user-images.githubusercontent.com/53503018/137048935-67102380-3c5c-4033-8ad3-c96cde57f4d1.png">
 
   <p>Final visualization emphasizing <code>Age</code>, <code>Education</code>, and <code>Party</code> (over time)</p>
 </div>
 
-Summary goes here.
+## Appendix
 
-## Variable Table
+### Variable Description Table
 
 | Variable | Description |
 |---|---|
