@@ -2,7 +2,7 @@
 
 ## Choosing a dataset to explore
 
-The data I explored was a subset of The General Society Survey [^1] focused on stances around abortion. I found the dataset from Rdatasets [^2] but it was originally created at stevedata [^3]. I explored a variety of datasets but eventually settled on this dataset because it was a large dataset with a variety of variables in a context I could still understand. Much of the data I avoided because it would involve more data cleaning than exploration (e.g. Unicef data [^4]) or from a context I didn't fully understand (e.g. health data [^5]). I found this dataset to be both usable and comprehensible. For brevity, I have described each variable in a table at the bottom of this document.
+The data I explored was a subset of The General Society Survey [^1] focused on stances around abortion. I found the dataset from Rdatasets [^2] but it was originally at stevedata [^3]. I explored a variety of datasets but eventually settled on this dataset because it was a large dataset with a variety of variables in a context I could still understand. Much of the data I avoided because it would involve more data cleaning than exploration (e.g. Unicef data [^4]) or from a context I didn't fully understand (e.g. health data [^5]). I found this dataset to be both usable and comprehensible. For brevity, I have described each variable in a table at the bottom of this document.
 
 ### Initial Question
 
@@ -10,7 +10,8 @@ Given this survey data, what different demographics tend to be in favor of or ag
 
 ## Why am I having parsing errors?
 
-The first step was to clean the data by specifying data types, renaming columns, and filling in missing values. During this step I also viewed the raw data and explored it with the (non-visual) R methods `dim`, `view`, `summary`, and `str`. This step is simple but it was an important step in the data exploration because all the parsing errors forced me to become familar with the format of the data.
+The first step was to clean the data by specifying data types, renaming columns, and filling in missing values. I also viewed the raw data and explored it with the (non-visual) R methods `dim`, `view`, `summary`, and `str`. This step was helpful because all the parsing errors pushed me to become familiar with the structure of the data.
+
 <div align="center">
   <img height="300" alt="a" src="https://user-images.githubusercontent.com/53503018/136717881-14b7d002-cada-4171-ad32-cdaab5aa4298.png">
   <img height="300" alt="b" src="https://user-images.githubusercontent.com/53503018/136717883-aa207ceb-00b2-4259-bd9d-8323d594e036.png">
@@ -19,7 +20,7 @@ The first step was to clean the data by specifying data types, renaming columns,
 
 ## How many missing values are there?
 
-I started by visualizing the number of missing value for each column. When I ignored rows with missing values it removed too much data. You can see below when I remove rows with `NA` for `ab_any`, we go from `64814` values to `36794` values. This prompted me to investigate why it was there were so many missing values.
+I started by visualizing the number of missing values for each column. When I ignored rows with missing values it removed too much data. You can see below when I remove rows with `NA` for `ab_any`, we go from `64814` values to `36794` values. This prompted me to investigate why it was there were so many missing values.
 
 <div align="center">
   <img width="45%" alt="0a00005c.png" src="https://user-images.githubusercontent.com/53503018/136874866-9b5d89d0-5232-49ec-9cc7-f6f16eaa1c74.png">
@@ -68,7 +69,7 @@ With this long step of cleaning data over, I could start plotting in Tableau.
 
 ## Are there any obvious differences between demographics?
 
-I started by creating bar charts of some nominal variables (`Hispanic`, `Party`, `Sex`) against Abortion stances. I had expected to see more difference in these stances between groups, especially between the sexes, but it didn't seem there was a significant difference. One unexpected thing this did highlight was differences between the different reasons for abortion. Some reasons like health were more accepted than a reason like poverty accross these demographics.
+I started by creating bar charts of some nominal variables (`Hispanic`, `Party`, `Sex`) against Abortion stances. I had expected to see more difference in these stances between groups, especially between the sexes, but it didn't seem there was a significant difference. One unexpected thing this did highlight was the differences between the different reasons for abortion. Some reasons like health were more accepted than a reason like poverty across these demographics.
 
 <div align="center">
   <img width="45%" alt="Abortion Stances by Hispanic" src="https://user-images.githubusercontent.com/53503018/136875278-62288e2a-bb64-4050-b18f-8e8cda697c60.png">
@@ -81,7 +82,7 @@ I started by creating bar charts of some nominal variables (`Hispanic`, `Party`,
 
 ## Are there any correlations?
 
-For variables that I thought could be treated as ordinal, like `Religious Activity`, `Age`, `Education`, or `Party` (adjusted to a numerical scale from Democratic to Republican). By plotting on a simple line chart I was able to see some simple linear correlations for `Education`, `Age`, and `Party`. `Religious Activity` (on scale from 1:11) had some interesting behaviour once it got to `11` but I was unable to find the original scale from the questionnaires to find out what this meant because the questionnaire had become computerized which made it much harder to search for a specific question.
+For variables that I thought could be treated as ordinal, like `Religious Activity`, `Age`, `Education`, or `Party` (adjusted to a numerical scale from Democratic to Republican). By plotting on a simple line chart I was able to see some simple linear correlations for `Education`, `Age`, and `Party`. `Religious Activity` (on a scale from 1:11) had some interesting behavior once it got to `11` but I was unable to find the original scale from the questionnaires to find out what this meant because the questionnaire had become computerized which made it much harder to search for a specific question.
 
 <div align="center">
   <img width="45%" alt="1Abortion Stances by Party.png" src="https://user-images.githubusercontent.com/53503018/136875123-f6b1b241-cb3f-4b3c-9828-d4038137fac3.png">
@@ -94,7 +95,7 @@ For variables that I thought could be treated as ordinal, like `Religious Activi
 
 ## What effect has time had on abortion stances?
 
-I plotted against time next because of the correaltion with `Age` shown above and I just suspected there would be a pattern. I was surprised that overall there wasn't much change in the proportion of answers to questions on abortion. I did however notice the distinction between reasons for abortion even more clearly than in the bar charts. The chart by party over time was most interesting because you can see the stances on abortion diverge among party lines with the most Democratic `party` encoded as `-3` and the most Republican encoded as `3`.
+I plotted against time next because of the correlation with `Age` shown above and I just suspected there would be a pattern. I was surprised that overall there wasn't much change in the proportion of answers to questions on abortion. I did however notice the distinction between reasons for abortion even more clearly than in the bar charts. The chart by `Party` over time was most interesting because you can see the stances on abortion diverge among party lines with the most Democratic `Party` encoded as `-3` and the most Republican encoded as `3`.
 
 <div align="center">
   <img width="45%" alt="Abortion Stances by Year" src="https://user-images.githubusercontent.com/53503018/136875293-45133031-3bf2-413f-9bd2-db91f33d4454.png">
@@ -114,7 +115,7 @@ Based on previous visualizations, I found these insights the most interesting:
 4. The difference between reasons for abortion
 5. The reason for missing values (survey question changes)
 
-I created new visuals to highlight each of these visuals besides the last point (because it was part of data cleaning). I combined points 2 and 4 by grouping by reason before age.
+I created new visuals to highlight each of these besides the last point (because it was part of data cleaning). I combined points 2 and 4 by grouping by reason before age.
 
 <div align="center">
   <img width="85%" alt="Abortion Stances by Age" src="https://user-images.githubusercontent.com/53503018/137049941-a3a961a1-f3f2-41cf-822f-a039964a1e4a.png">
