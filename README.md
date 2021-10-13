@@ -15,7 +15,7 @@ The data I explored was a subset of The General Society Survey [^1] focused on s
 
 ### Initial Question
 
-Given this survey data, what different demographics are in favor of and against abortion?
+Given this survey data, what different demographics tend to be in favor of or against abortion?
 
 ## Why am I having parsing errors?
 
@@ -66,14 +66,14 @@ I was decided to color by the proportion of `NA` values and noticed while some y
 
 Now that I knew the reason for the missing values, I had a better idea of how to replace them without misrepresenting the data. I will skip the details for brevity, but besides `religious_activity` I was able to replace the `NA` values with something to represent that a question was not asked.
 
-With this long step of cleaning data over, I could start plotting in Tableau.
-
 <div align="center">
   <img width="45%" alt="0a00005c.png" src="https://user-images.githubusercontent.com/53503018/136874866-9b5d89d0-5232-49ec-9cc7-f6f16eaa1c74.png">
   <img width="45%" alt="0c00005e.png" src="https://user-images.githubusercontent.com/53503018/136874870-16b44c0a-0cf8-48a9-8419-5ae742a3ea8f.png">
 
   <p>Old data on left, cleaned data on right.</p>
 </div>
+
+With this long step of cleaning data over, I could start plotting in Tableau.
 
 ## Are there any obvious differences between demographics?
 
@@ -115,16 +115,11 @@ I plotted against time next because of the correaltion with `Age` shown above an
 
 ## Summary of Lessons Learned
 
-I learned abortion has become more accepted over time.
+Now let us return to the original question:
 
-Key demographics:
+> Given this survey data, what different demographics tend to be in favor of or against abortion?
 
-- Young
-- (In recent years) Democratic
-- (maybe) Religiously inactive
-- More years of education
-
-When it's listed out it seems *really* simplified and reductionist
+Summary goes here.
 
 ## Variable Table
 
